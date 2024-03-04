@@ -1,3 +1,7 @@
+---
+editLink: true
+---
+
 # Build
 
 As another useful subcommand, it helps us to build the final binary and generate `.d.ts`. Standard command will be:

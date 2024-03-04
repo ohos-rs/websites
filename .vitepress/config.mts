@@ -35,6 +35,14 @@ export default defineConfig({
         ],
         socialLinks: [
             {icon: 'github', link: 'https://github.com/ohos-rs'}
-        ]
-    }
+        ],
+        editLink: {
+            pattern: 'https://github.com/ohos-rs/ohos-rs.github.io/tree/master/src/:path',
+            text: 'Edit this page on GitHub'
+        },
+        lastUpdated: {
+            text: "Last updated"
+        }
+    },
+
 })

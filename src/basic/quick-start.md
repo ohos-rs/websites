@@ -1,3 +1,7 @@
+---
+editLink: true
+---
+
 # Quick Start
 
 We provide a cli tool to simplify some action. For example: `init`, `build` and so on.

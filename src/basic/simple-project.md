@@ -1,3 +1,7 @@
+---
+editLink: true
+---
+
 # Simple Project
 
 We can use tool to initial our HarmonyOS's project, and it's also possible for us to initial project with standard rust project.

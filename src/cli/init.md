@@ -1,3 +1,7 @@
+---
+editLink: true
+---
+
 # Init
 
 `ohrs` provide some useful subcommand to help us initial and build project.
