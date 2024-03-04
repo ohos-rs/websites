@@ -5,6 +5,11 @@ export default defineConfig({
     title: "ohos-rs",
     description: "A framework for building compiled OpenHarmony SDK in Rust via Node-API(Forked from napi-rs)",
     srcDir: "./src",
+    markdown: {
+        image: {
+            lazyLoading: true
+        }
+    },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -17,6 +22,7 @@ export default defineConfig({
                 text: 'Basic',
                 items: [
                     {text: 'Quick Start', link: '/basic/quick-start'},
+                    {text: 'Simple Project', link: '/basic/simple-project'},
                 ]
             },
             {

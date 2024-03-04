@@ -16,7 +16,7 @@ For rust, we can use official guide to install it.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-::: tip
+::: tip 🌈
 For more detail about rust, you can visit [link](https://www.rust-lang.org/learn/get-started)
 :::
 
