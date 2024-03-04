@@ -3,3 +3,6 @@ node_modules/
 .idea/
 
 .DS_Store
+
+pnpm-lock.yml
+package-lock.json
