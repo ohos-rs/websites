@@ -14,22 +14,41 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Docs', link: '/basic'}
+            {text: 'Docs', link: '/basic.md'}
         ],
 
         sidebar: [
             {
                 text: 'Basic',
                 items: [
-                    {text: 'Quick Start', link: '/basic/quick-start'},
-                    {text: 'Simple Project', link: '/basic/simple-project'},
+                    {text: 'Quick Start', link: '/basic.md/quick-start'},
+                    {text: 'Simple Project', link: '/basic.md/simple-project'},
                 ]
             },
             {
                 text: 'Cli',
                 items: [
                     {text: 'Init', link: "/cli/init"},
-                    {text: 'Build', link: "/cli/build.md"},
+                    {text: 'Build', link: "/cli/build"},
+                ]
+            },
+            {
+                text: 'Usage',
+                items: [
+                    {text: 'Basic', link: "/usage/basic.md"},
+                    {text: 'Task', link: "/usage/task.md"},
+                ]
+            },
+            {
+                text: 'CD/CD',
+                items: [
+                    {text: 'CI', link: "/ci/basic.md"},
+                ]
+            },
+            {
+                text: "More",
+                items: [
+                    {text: 'F & Q',link: '/more/f&q'}
                 ]
             }
         ],

@@ -11,9 +11,9 @@ hero:
       link: /basic
 
 features:
-  - title: Comprehensive Functions
+  - title: Comprehensive functions
     details: Align with napi-rs, which is famous in Node.js
-  - title: Simple Using
+  - title: Easy to use
     details: One command line to use it and more simpler than napi with C++
   - title: Rich examples
     details: The official provides a large number of real examples
