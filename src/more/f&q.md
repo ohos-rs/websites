@@ -1,3 +1,7 @@
+---
+editLink: true
+---
+
 # F & Q
 
 ## Why is the binary's size larger than C++?
