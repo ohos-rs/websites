@@ -5,17 +5,23 @@ layout: home
 hero:
   name: "ohos-rs"
   tagline: A framework for building compiled OpenHarmony SDK in Rust via Node-API(Forked from napi-rs)
+  image:
+    src: /assets/rust.svg
+    alt: ohos-rs
   actions:
     - theme: brand
       text: Get started
       link: /basic
 
 features:
-  - title: Comprehensive functions
+  - icon: 🌈
+    title: Comprehensive functions
     details: Align with napi-rs, which is famous in Node.js
-  - title: Easy to use
+  - icon: ⚡️
+    title: Easy to use
     details: One command line to use it and more simpler than napi with C++
-  - title: Rich examples
+  - icon: 🌰
+    title: Rich examples
     details: The official provides a large number of real examples
 ---
 
