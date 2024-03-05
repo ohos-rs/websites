@@ -21,8 +21,8 @@ export default defineConfig({
             {
                 text: 'Basic',
                 items: [
-                    {text: 'Quick Start', link: '/basic.md/quick-start'},
-                    {text: 'Simple Project', link: '/basic.md/simple-project'},
+                    {text: 'Quick Start', link: '/basic/quick-start'},
+                    {text: 'Simple Project', link: '/basic/simple-project'},
                 ]
             },
             {
