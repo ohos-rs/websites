@@ -1,6 +1,5 @@
 import {defineConfig} from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "ohos-rs",
     description: "A framework for building compiled OpenHarmony SDK in Rust via Node-API(Forked from napi-rs)",
@@ -10,17 +9,20 @@ export default defineConfig({
             lazyLoading: true
         }
     },
+    head: [
+        ['link', {rel: 'icon', href: '/favicon.ico'}]
+    ],
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
+        logo: "/logo.svg",
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Docs', link: '/basic.md'}
+            {text: 'Docs', link: '/basic'},
+            {text: 'About', link: '/about'}
         ],
 
         sidebar: [
             {
                 text: 'Basic',
-
                 items: [
                     {text: 'Quick Start', link: '/basic/quick-start'},
                     {text: 'Simple Project', link: '/basic/simple-project'},
@@ -40,14 +42,14 @@ export default defineConfig({
                 items: [
                     {text: 'Basic', link: "/usage/basic"},
                     {text: 'Task', link: "/usage/task"},
-                    {text: 'ThreadSafeFunction',link: "/usage/tsfn"}
+                    {text: 'ThreadSafeFunction', link: "/usage/tsfn"}
                 ]
             },
             {
                 text: 'Ecosystem',
                 collapsed: false,
                 items: [
-                    {text: '@ohos-rs/crc32',link: "/ecosystem/crc32"}
+                    {text: '@ohos-rs/crc32', link: "/ecosystem/crc32"}
                 ]
             },
             {
@@ -60,7 +62,7 @@ export default defineConfig({
             {
                 text: "More",
                 items: [
-                    {text: 'F & Q',link: '/more/f&q'}
+                    {text: 'F & Q', link: '/more/f&q'}
                 ]
             }
         ],

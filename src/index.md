@@ -6,7 +6,7 @@ hero:
   name: "ohos-rs"
   tagline: A framework for building compiled OpenHarmony SDK in Rust via Node-API(Forked from napi-rs)
   image:
-    src: /rust.svg
+    src: /logo.svg
     alt: ohos-rs
   actions:
     - theme: brand
