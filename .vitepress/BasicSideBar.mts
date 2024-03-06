@@ -2,45 +2,45 @@ export const BasicSideBar = [
     {
         text: 'Basic',
         items: [
-            {text: 'Quick Start', link: '/basic/quick-start'},
-            {text: 'Simple Project', link: '/basic/simple-project'},
+            {text: 'Quick Start', link: '/docs/basic/quick-start'},
+            {text: 'Simple Project', link: '/docs/basic/simple-project'},
         ]
     },
     {
         text: 'Cli',
         collapsed: false,
         items: [
-            {text: 'Init', link: "/cli/init"},
-            {text: 'Build', link: "/cli/build"},
+            {text: 'Init', link: "/docs/cli/init"},
+            {text: 'Build', link: "/docs/cli/build"},
         ]
     },
     {
         text: 'Usage',
         collapsed: false,
         items: [
-            {text: 'Basic', link: "/usage/basic"},
-            {text: 'Task', link: "/usage/task"},
-            {text: 'ThreadSafeFunction', link: "/usage/tsfn"}
+            {text: 'Basic', link: "/docs/usage/basic"},
+            {text: 'Task', link: "/docs/usage/task"},
+            {text: 'ThreadSafeFunction', link: "/docs/usage/tsfn"}
         ]
     },
     {
         text: 'Ecosystem',
         collapsed: false,
         items: [
-            {text: '@ohos-rs/crc32', link: "/ecosystem/crc32"}
+            {text: '@ohos-rs/crc32', link: "/docs/ecosystem/crc32"}
         ]
     },
     {
         text: 'CD/CD',
         collapsed: false,
         items: [
-            {text: 'CI', link: "/ci/basic.md"},
+            {text: 'CI', link: "/docs/ci/basic.md"},
         ]
     },
     {
         text: "More",
         items: [
-            {text: 'F & Q', link: '/more/f&q'}
+            {text: 'F & Q', link: '/docs/more/f&q'}
         ]
     }
 ];

@@ -39,7 +39,7 @@ ohrs build --compact
 
 If we use `--compact`, the final folder will be:
 
-![Dist](./assets/dist.png)
+![Dist](assets/dist.png)
 
 All the final binary will in a same folder.
 
@@ -51,4 +51,4 @@ cargo build --dist new_folder
 
 Now, the final project structure will be:
 
-![Dist](./assets/new_folder.png)
+![Dist](assets/new_folder.png)

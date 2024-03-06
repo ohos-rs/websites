@@ -17,11 +17,12 @@ export default defineConfig({
         logo: "/logo.svg",
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Docs', link: '/basic'},
-            {text: 'About', link: '/about'}
+            {text: 'Docs', link: '/docs/basic'},
+            {text: 'About', link: '/about/'}
         ],
         sidebar: {
-            '/basic': BasicSideBar
+            "/docs": BasicSideBar,
+            "/about": []
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/ohos-rs'}

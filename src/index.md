@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /basic
+      link: /docs/basic
 
 features:
   - icon: 🌈

@@ -88,4 +88,4 @@ ohrs build
 
 Then we can get the final prebuild binary and `.d.ts` file in `hello/dist`.
 
-![Dist](./assets/dist_tree.png)
+![Dist](assets/dist_tree.png)
