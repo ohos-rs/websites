@@ -6,6 +6,9 @@ editLink: true
 
 The runtime of HarmonyOS is very similar to Node.js, but there are slight differences in some logic, so it forked the code of [napi-rs](https://github.com/napi-rs/napi-rs) and made some modifications. The overall functions are basically aligned with napi-rs.
 
+::: danger
+The project is in the development stage, and some capabilities may have problems, please use with caution.
+:::
 
 ## Simple example
 
