@@ -18,7 +18,12 @@ export default defineConfig({
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Docs', link: '/docs/basic'},
-            {text: 'About', link: '/about/'}
+            {
+                text: 'About', items: [
+                    {text: 'Logo', link: '/about/'},
+                    {text: 'Issue', link: 'https://github.com/ohos-rs/example/issues'}
+                ]
+            }
         ],
         sidebar: {
             "/docs": BasicSideBar,
