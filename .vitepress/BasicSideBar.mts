@@ -1,4 +1,6 @@
-export const BasicSideBar = [
+import {DefaultTheme} from "vitepress";
+
+export const BasicSideBar: DefaultTheme.SidebarItem[] = [
     {
         text: 'Basic',
         items: [
@@ -27,7 +29,12 @@ export const BasicSideBar = [
         text: 'Ecosystem',
         collapsed: false,
         items: [
-            {text: '@ohos-rs/crc32', link: "/docs/ecosystem/crc32"}
+            {text: '@ohos-rs/crc32', link: "/docs/ecosystem/crc32"},
+            {
+                text: 'Native binding', items: [
+                    {text: 'hilog-binding', link: '/docs/ecosystem/native/hilog-binding'}
+                ]
+            }
         ]
     },
     {
