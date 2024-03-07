@@ -47,7 +47,8 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
     {
         text: "More",
         items: [
-            {text: 'F & Q', link: '/docs/more/f&q'}
+            {text: 'F & Q', link: '/docs/more/f&q'},
+            {text: 'Known issue',link: '/docs/more/known-issue'}
         ]
     }
 ];
