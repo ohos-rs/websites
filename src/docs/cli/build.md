@@ -12,11 +12,12 @@ cargo build
 
 It supports some special options.
 
-| Options |                                          description                                          |   type    | default |
-|---------|:---------------------------------------------------------------------------------------------:|:---------:|--------:|
-| release |           build mode,if it be set with true, project will build with `release` mode           | `boolean` |   false |
-| compact | Generate folder struct,if it be set with true, the final dist folder will not be nest folder. | `boolean` |   false |
-| dist    |                                   The final binary's folder                                   | `string`  |    dist |
+| Options | description                                                                                           | type      | default |
+|---------|:------------------------------------------------------------------------------------------------------|:----------|:--------|
+| release | build mode,if it be set with true, project will build with `release` mode                             | `boolean` | false   |
+| compact | Generate folder struct,if it be set with true, the final dist folder will not be nest folder.         | `boolean` | false   |
+| dist    | The final binary's folder                                                                             | `string`  | dist    |
+| strip   | Use `llvm-strip` to reduce the size of the binary files. Set the mode to true if it's in release mode | `boolean` | true    |
 
 
 ## Usage
@@ -52,3 +53,14 @@ cargo build --dist new_folder
 Now, the final project structure will be:
 
 ![Dist](assets/new_folder.png)
+
+
+### --strip
+
+```shell
+# enabled
+cargo build --strip
+
+# disabled
+cargo build --strip=false
+```
