@@ -1,5 +1,6 @@
 import {defineConfig} from 'vitepress'
 import {BasicSideBar} from "./BasicSideBar.mjs";
+import {EcosystemSideBar} from "./Ecosystem.mjs";
 
 export default defineConfig({
     title: "ohos-rs",
@@ -18,6 +19,7 @@ export default defineConfig({
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Docs', link: '/docs/basic'},
+            {text: 'Ecosystem',link: '/ecosystem/'},
             {
                 text: 'About', items: [
                     {text: 'Logo', link: '/about/'},
@@ -27,7 +29,8 @@ export default defineConfig({
         ],
         sidebar: {
             "/docs": BasicSideBar,
-            "/about": []
+            "/ecosystem": EcosystemSideBar,
+            "/about": [],
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/ohos-rs'}

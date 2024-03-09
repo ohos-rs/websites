@@ -26,18 +26,6 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
         ]
     },
     {
-        text: 'Ecosystem',
-        collapsed: false,
-        items: [
-            {text: '@ohos-rs/crc32', link: "/docs/ecosystem/crc32"},
-            {
-                text: 'Native binding', items: [
-                    {text: 'hilog-binding', link: '/docs/ecosystem/native/hilog-binding'}
-                ]
-            }
-        ]
-    },
-    {
         text: 'CD/CD',
         collapsed: false,
         items: [
