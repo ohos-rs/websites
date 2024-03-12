@@ -19,8 +19,10 @@ ohpm install @ohos-rs/crc32
 ## Api
 
 ```ts
-export function crc32(input: string | buffer.Buffer, crc?: number): number
-export function crc32c(input: string | buffer.Buffer, crc?: number): number
+import buffer from '@ohos.buffer';
+
+export function crc32(input: string | buffer.Buffer, initialState?: number | undefined | null): number
+export function crc32c(input: string | buffer.Buffer, initialState?: number | undefined | null): number
 ```
 
 ## Usage

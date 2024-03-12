@@ -5,8 +5,13 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
         text: '@ohos-rs',
         collapsed: false,
         items: [
-            {text: '@ohos-rs/crc32', link: '/ecosystem/package/crc32'},
-            {text: '@ohos-rs/jieba', link: '/ecosystem/package/jieba'},
+            {text: 'crc32', link: '/ecosystem/package/crc32'},
+            {text: 'jieba', link: '/ecosystem/package/jieba'},
+            {text: 'argon2', link: '/ecosystem/package/argon2'},
+            {text: 'bcrypt', link: '/ecosystem/package/bcrypt'},
+            {text: 'jsonwebtoken', link: '/ecosystem/package/jsonwebtoken'},
+            {text: 'snappy', link: '/ecosystem/package/snappy'},
+            {text: 'xxhash', link: '/ecosystem/package/xxhash'},
         ]
     },
     {
