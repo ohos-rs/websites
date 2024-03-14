@@ -3,6 +3,7 @@ import {DefaultTheme} from "vitepress";
 export const BasicSideBar: DefaultTheme.SidebarItem[] = [
     {
         text: 'Basic',
+        link: '/docs/basic',
         items: [
             {text: 'Quick Start', link: '/docs/basic/quick-start'},
             {text: 'Simple Project', link: '/docs/basic/simple-project'},

@@ -41,6 +41,9 @@ export default defineConfig({
         },
         lastUpdated: {
             text: "Last updated"
+        },
+        search: {
+            provider: 'local'
         }
     },
 
