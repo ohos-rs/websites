@@ -22,4 +22,11 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
             {text: 'init', link: "/ecosystem/binding/init"},
         ]
     },
+    {
+        text: 'Third-Party',
+        collapsed: false,
+        items: [
+            {text: 'OpenSSL', link: "/ecosystem/third/openssl"}
+        ]
+    }
 ];
