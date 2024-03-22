@@ -26,7 +26,8 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
         text: 'Third-Party',
         collapsed: false,
         items: [
-            {text: 'OpenSSL', link: "/ecosystem/third/openssl"}
+            {text: 'OpenSSL', link: "/ecosystem/third/openssl"},
+            {text: 'cURL', link: "/ecosystem/third/curl"}
         ]
     }
 ];
