@@ -2,9 +2,11 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "format": "biome format --write ."
   },
   "devDependencies": {
-    "vitepress": "1.0.0"
+    "vitepress": "1.0.0",
+    "@biomejs/biome": "1.6.2"
   }
 }
