@@ -12,6 +12,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "jsonwebtoken", link: "/ecosystem/package/jsonwebtoken" },
 			{ text: "snappy", link: "/ecosystem/package/snappy" },
 			{ text: "xxhash", link: "/ecosystem/package/xxhash" },
+			{text: 'image',link: '/ecosystem/package/image'}
 		],
 	},
 	{
