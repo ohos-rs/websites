@@ -12,7 +12,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "jsonwebtoken", link: "/ecosystem/package/jsonwebtoken" },
 			{ text: "snappy", link: "/ecosystem/package/snappy" },
 			{ text: "xxhash", link: "/ecosystem/package/xxhash" },
-			{text: 'image',link: '/ecosystem/package/image'}
+			{ text: "image", link: "/ecosystem/package/image" },
 		],
 	},
 	{
@@ -30,6 +30,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "OpenSSL", link: "/ecosystem/third/openssl" },
 			{ text: "cURL", link: "/ecosystem/third/curl" },
 			{ text: "MMKV", link: "/ecosystem/third/mmkv" },
+			{ text: "avif", link: "/ecosystem/third/avif" },
 		],
 	},
 ];
