@@ -31,6 +31,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "cURL", link: "/ecosystem/third/curl" },
 			{ text: "MMKV", link: "/ecosystem/third/mmkv" },
 			{ text: "avif", link: "/ecosystem/third/avif" },
+			{ text: "cronet", link: "/ecosystem/third/cronet" },
 		],
 	},
 ];
