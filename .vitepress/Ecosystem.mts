@@ -32,6 +32,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "MMKV", link: "/ecosystem/third/mmkv" },
 			{ text: "avif", link: "/ecosystem/third/avif" },
 			{ text: "cronet", link: "/ecosystem/third/cronet" },
+			{ text: "BoringSSL", link: "/ecosystem/third/boringssl" },
 		],
 	},
 ];
