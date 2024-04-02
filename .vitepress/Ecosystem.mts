@@ -24,6 +24,13 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 		],
 	},
 	{
+		text: "Polyfill",
+		collapsed: false,
+		items: [
+			{ text: "AbortController", link: "/ecosystem/polyfill/abort-controller" },
+		],
+	},
+	{
 		text: "Third-Party",
 		collapsed: false,
 		items: [
