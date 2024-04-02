@@ -53,3 +53,8 @@ const a = h();
 
 You can find the example [here](https://github.com/ohos-rs/example/tree/main/example/boring_ssl).
 
+
+## More
+
+We also offer precompiled build outputs, which you can either use right away or custom-build as per your requirements. You can find it with [Repo](https://github.com/ohos-rs/ohos-boringssl)
+
