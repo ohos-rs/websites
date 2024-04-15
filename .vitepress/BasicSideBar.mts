@@ -36,6 +36,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 		items: [
 			{ text: "F & Q", link: "/docs/more/f&q" },
 			{ text: "Known issue", link: "/docs/more/known-issue" },
+			{ text: "EMU-TLS", link: "/docs/more/emu-tls" },
 		],
 	},
 ];
