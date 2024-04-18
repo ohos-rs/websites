@@ -1,5 +1,6 @@
 ---
 editLink: true
+outline: "deep"
 ---
 
 # Build
@@ -7,7 +8,7 @@ editLink: true
 As another useful subcommand, it helps us to build the final binary and generate `.d.ts`. Standard command will be:
 
 ```shell
-cargo build
+ohrs build
 ```
 
 It supports some special options.
@@ -15,7 +16,6 @@ It supports some special options.
 | Options | description                                                                                           | type      | default |
 |---------|:------------------------------------------------------------------------------------------------------|:----------|:--------|
 | release | build mode,if it be set with true, project will build with `release` mode                             | `boolean` | false   |
-| compact | Generate folder struct,if it be set with true, the final dist folder will not be nest folder.         | `boolean` | false   |
 | dist    | The final binary's folder                                                                             | `string`  | dist    |
 | strip   | Use `llvm-strip` to reduce the size of the binary files. Set the mode to true if it's in release mode | `boolean` | true    |
 
