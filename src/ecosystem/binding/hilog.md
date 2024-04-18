@@ -1,21 +1,22 @@
 ---
 editLink: true
+outline: 'deep'
 ---
 
-# hilog-binding
+# ohos-hilog-binding
 
 This is a binding crate for HarmonyOS's `hilog`.
 
 ## Install
 
 ```shell
-cargo add hilog-binding
+cargo add ohos-hilog-binding
 ```
 
 ## Usage
 
 ```rust
-use hilog_binding::hilog_debug;
+use ohos_hilog_binding::hilog_debug;
 use napi_derive_ohos::napi;
 
 #[napi]
