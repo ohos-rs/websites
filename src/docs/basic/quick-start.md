@@ -42,6 +42,10 @@ And then we need to install some toolchain and component, which will help use to
    
 ### HarmonyOS NDK
 
+::: tip
+For the latest SDK Version, You need `DevEco Studio NEXT Developer Beta1 (5.0.3.100)` or later.
+:::
+
 You just need to download the latest `DevEco-Studio` and download the latest SDK. You can download it with [official website](https://developer.huawei.com/consumer/cn/deveco-studio/)
 
 ## Install
