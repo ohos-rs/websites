@@ -22,4 +22,5 @@ submit a [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls). We'
 
 | Package Name                  | Description | More Info |
 |-------------------------------|-------------|-----------|
-| Sample ohpm package with link | Some info   | ...       |
+| [@kingtous/reqwest](https://gitee.com/Kingtous/ohos_reqwest) | A [reqwest](https://crates.io/crates/reqwest) binding  for OpenHarmony/HarmonyOS | With prebuilt [rustls](https://github.com/rustls/rustls), no openssl is needed.  |
+| [@kingtous/uuid](https://gitee.com/Kingtous/ohos_uuid) | The missing [UUID](https://crates.io/crates/uuid) library for OpenHarmony/HarmonyOS | UUID generation and validation.  |
