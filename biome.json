@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"include": ["src/**/*.md", ".vitepress/**/*.mts"]
+		"include": ["src/**/*.md", ".vitepress/**/*.ts"]
 	}
 }
