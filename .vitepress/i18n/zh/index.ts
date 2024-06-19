@@ -30,7 +30,7 @@ export const zh = defineConfig({
 		editLink: {
 			pattern:
 				"https://github.com/ohos-rs/ohos-rs.github.io/tree/master/src/:path",
-			text: "编辑本页",
+			text: "帮助我们改进本页面内容",
 		},
 		lastUpdated: {
 			text: "最新更新于",

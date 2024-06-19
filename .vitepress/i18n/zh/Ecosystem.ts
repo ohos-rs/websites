@@ -16,7 +16,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 		],
 	},
 	{
-		text: "Native-binding",
+		text: "原生模块绑定",
 		collapsed: false,
 		items: [
 			{ text: "hilog", link: "/ecosystem/binding/hilog" },
@@ -31,7 +31,7 @@ export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
 		],
 	},
 	{
-		text: "Third-Party",
+		text: "第三方能力",
 		collapsed: false,
 		items: [
 			{ text: "OpenSSL", link: "/ecosystem/third/openssl" },

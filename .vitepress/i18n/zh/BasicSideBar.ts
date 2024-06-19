@@ -2,27 +2,27 @@ import { DefaultTheme } from "vitepress";
 
 export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 	{
-		text: "Basic",
+		text: "简介",
 		link: "/docs/basic",
 		items: [
-			{ text: "Quick Start", link: "/docs/basic/quick-start" },
-			{ text: "Simple Project", link: "/docs/basic/simple-project" },
+			{ text: "快速开始", link: "/docs/basic/quick-start" },
+			{ text: "从 0 新建项目", link: "/docs/basic/simple-project" },
 		],
 	},
 	{
-		text: "Cli",
+		text: "脚手架",
 		collapsed: false,
 		items: [
-			{ text: "Init", link: "/docs/cli/init" },
-			{ text: "Build", link: "/docs/cli/build" },
-			{ text: "Artifact", link: "/docs/cli/artifact" },
+			{ text: "init", link: "/docs/cli/init" },
+			{ text: "build", link: "/docs/cli/build" },
+			{ text: "artifact", link: "/docs/cli/artifact" },
 		],
 	},
 	{
-		text: "Usage",
+		text: "用法",
 		collapsed: false,
 		items: [
-			{ text: "Basic", link: "/docs/usage/basic" },
+			{ text: "基本用法", link: "/docs/usage/basic" },
 			{ text: "Task", link: "/docs/usage/task" },
 			{ text: "ThreadSafeFunction", link: "/docs/usage/tsfn" },
 		],
@@ -35,8 +35,8 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 	{
 		text: "More",
 		items: [
-			{ text: "F & Q", link: "/docs/more/f&q" },
-			{ text: "Known issue", link: "/docs/more/known-issue" },
+			{ text: "常见问题", link: "/docs/more/f&q" },
+			{ text: "已知问题", link: "/docs/more/known-issue" },
 			{ text: "EMU-TLS", link: "/docs/more/emu-tls" },
 		],
 	},
