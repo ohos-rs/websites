@@ -2,70 +2,63 @@
 editLink: true
 ---
 
-# Quick Start
+# 快速开始
 
-We provide a cli tool to simplify some action. For example: `init`, `build` and so on.
+我们基于 Rust 实现了一个简单的脚手架工具，提供了类似于初始化，构建等命令。
 
-We will now begin to introduce this capability step by step.
+我们现在开始一步步介绍如何基于 ohos-rs 开发一个鸿蒙原生模块。
 
-## Requirement
+## 环境准备
 
-Before all, we need to install `Rust` and `HarmonyOS NDK`.
+在开始之前，我们需要安装 `Rust` 和 `HarmonyOS NDK`.
 
 ### Rust
 
-For rust, we can use official guide to install it.
+对于 Rust 来说，我们可以直接使用官方提供的安装脚本来实现安装。
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ::: tip 🌈
-For more detail about rust, you can visit [link](https://www.rust-lang.org/learn/get-started)
+1. 你需要确保你安装的 Rust 版本是 >= 1.78.0 的
+2. 更多关于 Rust 的信息和知识点，你可以访问 [link](https://www.rust-lang.org/learn/get-started)
 :::
 
-And then we need to install some toolchain and component, which will help use to build prebuild binary for HarmonyOS.
+然后我们需要安装一些 Rust 的 toolchain 来帮助我们构建鸿蒙的原生模块。
 
-1. **nightly toolchain**
-
-   OpenHarmony is `tier3` target for rust, so we must use custom toolchain or use source-code to build it.
-   Just run this command and set toolchain to `nightly`
-   ```shell
-   rustup default nightly
-   ```
-2. **rust-std**   
-
-    Then we need to install source code. Just run this command
-   ```shell
-   rustup component add rust-src
-   ```
+```shell
+rustup target add aarch64-unknown-linux-ohos
+rustup target add armv7-unknown-linux-ohos
+rustup target add x86_64-unknown-linux-ohos
+```
    
 ### HarmonyOS NDK
 
 ::: tip
-For the latest SDK Version, You need `DevEco Studio NEXT Developer Beta1 (5.0.3.100)` or later.
+对于最新的 ohos-rs 版本，鸿蒙 NDK 的版本需要是 `DevEco Studio NEXT Developer Beta1 (5.0.3.100)` 或者更新.
 :::
 
-You just need to download the latest `DevEco-Studio` and download the latest SDK. You can download it with [official website](https://developer.huawei.com/consumer/cn/deveco-studio/)
+你只需要下载最新的 `DevEco-Studio` 然后安装对应的 NDK 即可. 你可以在 [官方网站](https://developer.huawei.com/consumer/cn/deveco-studio/) 找到并且下载。
 
-## Install
+## 安装
 
-Now, you can install cli tool with `cargo`.
+现在你可以用 `cargo` 来安装脚手架工具了。
 
 ```shell
 cargo install ohrs
 ```
 
-## Simple Project
+## 简单的项目示例
 
-Using `ohrs` to init project
+使用 `ohrs` 来初始化项目。
 
 ```shell
 ohrs init hello
 ```
 
-And using `ohrs` to build project
+之后使用 `ohrs` 来构建项目
 
 ```shell
-ohrs build.md
+ohrs build
 ```
