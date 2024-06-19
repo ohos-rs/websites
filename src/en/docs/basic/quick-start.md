@@ -1,0 +1,71 @@
+---
+editLink: true
+---
+
+# Quick Start
+
+We provide a cli tool to simplify some action. For example: `init`, `build` and so on.
+
+We will now begin to introduce this capability step by step.
+
+## Requirement
+
+Before all, we need to install `Rust` and `HarmonyOS NDK`.
+
+### Rust
+
+For rust, we can use official guide to install it.
+
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+::: tip 🌈
+For more detail about rust, you can visit [link](https://www.rust-lang.org/learn/get-started)
+:::
+
+And then we need to install some toolchain and component, which will help use to build prebuild binary for HarmonyOS.
+
+1. **nightly toolchain**
+
+   OpenHarmony is `tier3` target for rust, so we must use custom toolchain or use source-code to build it.
+   Just run this command and set toolchain to `nightly`
+   ```shell
+   rustup default nightly
+   ```
+2. **rust-std**   
+
+    Then we need to install source code. Just run this command
+   ```shell
+   rustup component add rust-src
+   ```
+   
+### HarmonyOS NDK
+
+::: tip
+For the latest SDK Version, You need `DevEco Studio NEXT Developer Beta1 (5.0.3.100)` or later.
+:::
+
+You just need to download the latest `DevEco-Studio` and download the latest SDK. You can download it with [official website](https://developer.huawei.com/consumer/cn/deveco-studio/)
+
+## Install
+
+Now, you can install cli tool with `cargo`.
+
+```shell
+cargo install ohrs
+```
+
+## Simple Project
+
+Using `ohrs` to init project
+
+```shell
+ohrs init hello
+```
+
+And using `ohrs` to build project
+
+```shell
+ohrs build.md
+```
