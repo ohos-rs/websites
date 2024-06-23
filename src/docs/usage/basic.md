@@ -21,8 +21,8 @@ editLink: true
 
 ### 额外的变更
 
-todo
+1. `napi_run_script`使用`napi_run_script_path`替代，在 ohos-rs 中暴露的 API 没有变化。
 
 ### 不需要调用的能力
 
-todo
+1. 无须额外调用 `napi_adjust_external_memory` 方法
