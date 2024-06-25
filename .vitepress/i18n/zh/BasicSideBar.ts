@@ -16,6 +16,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "init", link: "/docs/cli/init" },
 			{ text: "build", link: "/docs/cli/build" },
 			{ text: "artifact", link: "/docs/cli/artifact" },
+			{ text: "cargo", link: "/docs/cli/cargo" },
 		],
 	},
 	{
