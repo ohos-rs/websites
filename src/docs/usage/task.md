@@ -4,13 +4,13 @@ editLink: true
 
 # Task
 
-`Task` is the most important part of the ohos-rs. It helps us to implement complex logic in `libuv`, which can avoid cause the main thread to lock.
+与 napi-rs 相同的，`Task` 同样是 ohos-rs 中最重要的一部分。它能够帮助我们快速的基于`libuv`实现各种复杂异步逻辑，这可以避免我们对主线程的阻塞。
 
-For example, if we perform CPU-intensive calculations in the main thread, it will cause the main thread to freeze, and the UI and other tasks cannot proceed.
+举个🌰：假设我们在主线程去实现一个斐波那契数列计算，最终就会导致 UI 和其他任务无法进行，从而导致 App freeze。
 
-## Basic usage
+## 基础用法
 
-If we need to use `task`, we should implement the `Task` trait for any data. Task's trait is below here:
+如果我们需要使用`Task`，那么就需要我们为其实现名为`Task`的`trait`。该`trait`定义如下所示：
 
 ```rust
 pub trait Task: Send + Sized {
@@ -35,23 +35,23 @@ pub trait Task: Send + Sized {
 }
 ```
 
-For us, we must implement the basic method: `compute` `resolve`.
+对于我们来说，需要实现最基本的两个方法: `compute` `resolve`.
 
 **compute**   
-This method will be executed in `libuv` with sub thread.
+这个函数中的逻辑将会在`libuv`的子线程中被执行
 
 **resolve**   
-This method will be executed in the main thread.
+这个函数将会在`compute`函数执行完成之后执行，并且该函数是在主线程执行的。
 
 ::: warning
-You should avoid to run the complex logic in this method.
+请避免复杂和耗时的任务或者逻辑在`resolve`方法中被执行。
 :::
 
-## Simple example
+## 一个简单的🌰
 
-Now we try to implement the `fibonacci` with task.
+现在我们尝试用 Task 来实现一个`fibonacci`计算逻辑。
 
-At first, we need to declare a basic struct.
+首先我们需要定义一个计算方法以及最简单的数据结构。
 
 ```rust
 fn fibonacci_native(n: u32) -> u32 {
@@ -72,7 +72,7 @@ impl ComputeFib {
 }
 ```
 
-Then, we need to implement the `Task` for `ComputeFib`.
+然后我们需要为定义的 `ComputeFib` 实现 `Task`。
 
 ```rust
 impl Task for ComputeFib {
@@ -89,7 +89,7 @@ impl Task for ComputeFib {
 }
 ```
 
-Finally just to register a method for `ArkTS`, the function's sign should be below here:
+最后我们只需要将方法注册到环境中即可，其函数签名也应该如下所示：
 
 ::: code-group
 ```rust [lib.rs]
@@ -108,7 +108,7 @@ export function fib(init: number): Promise<number>
 ```
 :::
 
-Now we can use it in `ArkTS`.
+现在我们可以在上层的 ArkTS 直接调用这个方法如下所示：
 
 ```ts
 import nativeFib from 'libfib.so';
@@ -116,4 +116,4 @@ import nativeFib from 'libfib.so';
 const result = await nativeFib.fib(10);
 ```
 
-The fibonacci will run in the `libuv`.
+最终的斐波那契计算将会在 `libuv` 中执行，主线程不会被该计算任务所阻塞。
