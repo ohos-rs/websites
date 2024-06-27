@@ -30,4 +30,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: c836b46f0b7ff4e3255625fb38bbe1f9
           projectName: ohos-rs-github-io
-          directory: docs/.vitepress/dist
+          directory: .vitepress/dist
