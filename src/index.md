@@ -10,18 +10,18 @@ hero:
     alt: ohos-rs
   actions:
     - theme: brand
-      text: Get started
+      text: 快速开始
       link: /docs/basic
 
 features:
   - icon: 🌈
-    title: Comprehensive functions
-    details: Align with napi-rs, which is famous in Node.js
+    title: 功能丰富
+    details: 基本对齐 napi-rs 整体功能
   - icon: ⚡️
-    title: Easy to use
-    details: One command line to use it and more simpler than napi with C++
+    title: 使用简单
+    details: 一行命令即可完成项目的构建，比使用 C++ 开发更简洁
   - icon: 🌰
-    title: Rich examples
-    details: The official provides a large number of real examples
+    title: 示例全面
+    details: 官方提供了大量真实案例以及社区适配方案
 ---
 
