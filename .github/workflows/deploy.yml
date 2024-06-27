@@ -1,0 +1,33 @@
+on: [pull_request]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run a build step here if your project requires
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # or pnpm / yarn
+
+      - name: Install dependencies
+        run: npm ci # or pnpm install / yarn install / bun install
+
+      - name: Build with VitePress
+        run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: c836b46f0b7ff4e3255625fb38bbe1f9
+          projectName: ohos-rs-github-io
+          directory: docs/.vitepress/dist
