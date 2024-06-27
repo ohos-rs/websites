@@ -30,3 +30,4 @@ jobs:
           accountId: c836b46f0b7ff4e3255625fb38bbe1f9
           projectName: ohos-rs-github-io
           directory: .vitepress/dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
