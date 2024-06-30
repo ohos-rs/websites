@@ -2,22 +2,29 @@
 editLink: true
 ---
 
-# F & Q
+# 常见问题
 
-## Why is the binary's size larger than C++ ?
+## 为什么最终产物的体积比 C++ 大 ?
 
-In fact, Rust's build products are generally about 10 times larger than C++'s build products. However, as the code functionality increases, this gap will gradually narrow. You can refer to [min-sized-rust](https://github.com/johnthagen/min-sized-rust) for optimization.
+事实上，目前看来 Rust 的构建产物体积普遍大于 C++ 的构建产物，不过随着项目功能和第三方库引入的增多，这个差距会逐渐变小。 你可以参考 [min-sized-rust](https://github.com/johnthagen/min-sized-rust) 项目来对你的项目进行一些构建优化。目前推荐开启 strip 和 lto 优化，基本配置如下所示：
 
-## `Option<T>` will cause a crash
+```toml
+# Cargo.toml
+[profile.release]
+lto = true
+strip = true
+```
 
-For optional parameters, they will be assigned to `undefined` in Node.js, but HarmonyOS lacks this step, which will cause the framework to fail to confirm the parameters and thus cause a crash.
+## `Option<T>` 导致报错
 
-This error is related to the phone's ROM. **At this stage, you should avoid using optional parameters.**
+对于一些比较旧的版本，使用`Option<>`语法会导致鸿蒙直接 crash，其实本质上是鸿蒙上面的 N-API 实现问题导致，在一些比较新的版本已经修复了。
 
-## How to migrate existing `.so` files from Android and iOS ?
+## 如何将其他平台已有的动态/静态链接库迁移到鸿蒙系统？
 
-In fact, we cannot directly use any previously compiled `.so` files from **non-HarmonyOS** platforms.
+首先我们需要明确的一点是：其他平台构建的动态/静态链接库无法直接在鸿蒙上面使用。举个例子：我们没有办法将构建的 iOS 平台的动态链接库在安卓上面使用，这个是同理的。
 
-All `.so` files must be recompiled with HarmonyOS's NDK to meet the specifications, otherwise they cannot be used.
+如果需要使用动态/静态链接库，就必须使用鸿蒙 SDK 提供的 native 能力进行重新编译适配，才能够正常使用。
 
-A real example is compiling `openssl` for HarmonyOS. You can find the [example](https://github.com/ohos-rs/ohos-openssl).
+假设你使用的动态链接库是第三方厂商提供的，如果没有源码请提需求给厂商进行适配，如果有源码可以自行重新编译构建适配。
+
+你可以参考 [OpenSSL](https://github.com/ohos-rs/ohos-openssl) 的鸿蒙适配来适配你的 SDK 。
