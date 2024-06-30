@@ -3,15 +3,17 @@ editLink: true
 outline: "deep"
 ---
 
-# EMU-TLS
+## EMU-TLS
 
-For versions of LLVM 15 and above, emu-tls related symbols have been moved into `libc++.so` and `libclang_rt.builtins.a` files. Therefore, if you encounter errors similar to the ones below, please link to the relevant dynamic or static library.
+对于 llvm 15 或者更高的版本， emu-tls 以及相关的 symbol 符号已经被移动到了 `libc++.so` and `libclang_rt.builtins.a` 文件中。因此如果你出现了类似于下面的这种报错，请考虑新增链接文件：
 
 ::: danger Error
 __emutls_get_address: symbol not found
 :::
 
-## How to solve it?
+### 如何解决？
+
+在构建脚本中链接对应的内置动态/静态链接库即可：
 
 ```rust
 // build.rs
@@ -23,13 +25,13 @@ fn main() {
 }
 ```
 
-### x86_64
+## x86_64
 
-When dealing with the x86_64 architecture, we might encounter an error like the one below.
+当构建 x64_64 架构的产物时，我们可能会遇到如下的报错：
 
 ![error](assets/x86_64_error.png)
 
-Add `.cargo/config.toml` file in your project, and add some code.
+在你的项目中新增文件`.cargo/config.toml`并且添加如下内容：
 
 ```toml
 [unstable]
