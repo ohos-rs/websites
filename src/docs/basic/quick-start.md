@@ -1,5 +1,6 @@
 ---
 editLink: true
+outline: "deep"
 ---
 
 # 快速开始
@@ -40,6 +41,18 @@ rustup target add x86_64-unknown-linux-ohos
 :::
 
 你只需要下载最新的 `DevEco-Studio` 然后安装对应的 NDK 即可. 你可以在 [官方网站](https://developer.huawei.com/consumer/cn/deveco-studio/) 找到并且下载。
+
+下载完成之后，你需要为系统设置一个环境变量来帮助我们构建原生模块。假设你安装的 SDK 路径为 `/path/Sdk`，那么我们只需要设置如下的环境变量即可：
+
+```shell
+# 一般来说 SDK 目录下面都有多个版本，选择你自己需要使用的版本即可。
+# 对于 unix 系统的用户来说请务必使用 export 否则会导致读取不到环境变量
+export OHOS_NDK_HOME=/path/Sdk/9/
+```
+
+设置完成之后，我们可以尝试查看环境变量的内容，效果如下所示：
+
+![ndk](assets/ndk.png)
 
 ## 安装
 
