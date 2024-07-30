@@ -8,6 +8,18 @@ editLink: true
 
 你可以参考这个 [Github Action](https://github.com/ohos-rs/ohos-rs/blob/ohos/.github/workflows/simple-test.yml) 来创建你自己的流水线。
 
-::: info
-注意：目前 Docker 镜像是基于 OpenHarmony 4.0 release 的 NDK 构建的。
-:::
+## 版本
+
+### 4.0
+
+```bash
+docker push southorange/ohos-base:v4.0
+```
+
+### 4.1
+
+注意 4.1 中默认不安装 ohrs 脚手架工具，请在自己的工作流中实时安装。
+
+```bash
+docker push southorange/ohos-base:v4.1
+```
