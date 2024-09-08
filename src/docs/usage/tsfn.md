@@ -45,6 +45,10 @@ pub struct ThreadsafeFunction<
 5. Weak: 是否为 weak 模式，当设置为 true 时，创建的 TSFN 会被调用 `napi_unref_threadsafe_function` 来去掉引用。
 6. MaxQueueSize: 设置 TSFN 回调函数队列的大小，默认为 0 则为无限大。
 
+::: tip 提示
+注意这个是内部的实现，写在这里以帮助我们更好的使用 ThreadsafeFunction，如果你只是想直接用，请忽略这部分直接参考下面的代码。
+:::
+
 ### 直接接受 TSFN
 
 最常见的使用就是在函数定义的时候直接在参数中定义成 TSFN 来接受一个函数，该函数在使用的时候已经被框架包装成为了一个 TSFN，无须开发者再进行任何操作了。

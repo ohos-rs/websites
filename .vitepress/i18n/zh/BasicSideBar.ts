@@ -17,6 +17,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "build", link: "/docs/cli/build" },
 			{ text: "artifact", link: "/docs/cli/artifact" },
 			{ text: "cargo", link: "/docs/cli/cargo" },
+			{ text: "doctor", link: "/docs/cli/doctor" },
 		],
 	},
 	{
@@ -26,6 +27,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 			{ text: "基本用法", link: "/docs/usage/basic" },
 			{ text: "Task", link: "/docs/usage/task" },
 			{ text: "ThreadSafeFunction", link: "/docs/usage/tsfn" },
+			{ text: "ArkRuntime", link: "/docs/usage/ark_runtime" },
 		],
 	},
 	{
@@ -41,7 +43,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 		items: [
 			{ text: "Buffer", link: "/docs/more/buffer" },
 			{ text: "常见问题", link: "/docs/more/f&q" },
-			{ text: "已知问题", link: "/docs/more/known-issue" },
+			{ text: "N-API", link: "/docs/more/known-issue" },
 			{ text: "EMU-TLS", link: "/docs/more/emu-tls" },
 		],
 	},
