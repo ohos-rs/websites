@@ -2,24 +2,19 @@
 editLink: true
 ---
 
-Unlike the Ecosystem, the Community will serve as a hub for community-related info, such as details on applications or
-packages that are utilizing this repository.
+与生态模块不同，社区更多的是展示一些在真实的项目中使用的本项目的信息。比如一些真实的 SDK 或者一些真实的应用。
 
-## Application
+## 应用
 
-If you've utilized this repository to develop native features for your app, we'd love for you to submit
-a [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls). We'd be
-thrilled to know about it and showcase it here.
+如果您或者您的公司使用本项目开发鸿蒙的原生模块，我们非常欢迎您提交 [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls) 来使我们知道这件事情并且展示在这里。
 
-| Application Name | Icon                          | More Info |
-|------------------|-------------------------------|-----------|
-| Sample           | Reference icon from subfolder | ...       |
+| 应用名    | Icon             | 更多信息 |
+|--------|------------------|------|
+| Sample | 从文档的子文件夹中引用 icon | ...  |
 
 ## Package
 
-If you've used this repository to develop ohpm packages for higher-level applications, we'd be delighted if you could
-submit a [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls). We'd love to know about it and feature it
-here.
+如果您或者您的公司使用本项目开发鸿蒙的原生模块、ohpm 包或者其他上层接口，我们也非常欢迎您提交 [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls) 来使我们知道这件事情并且展示在这里。
 
 | Package Name                                                 | Description                                                                         | More Info                                                                       |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
