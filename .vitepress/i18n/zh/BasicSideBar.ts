@@ -41,6 +41,7 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
 	{
 		text: "More",
 		items: [
+			{ text: "Diff", link: "/docs/more/diff" },
 			{ text: "Buffer", link: "/docs/more/buffer" },
 			{ text: "常见问题", link: "/docs/more/f&q" },
 			{ text: "N-API", link: "/docs/more/known-issue" },
