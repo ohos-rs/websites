@@ -9,10 +9,6 @@ editLink: true
 
 OpenHarmony 目前底层的运行机制与 Node.js 十分相像，但是在一些小的方面有一些差异。因此我们基于 [napi-rs](https://github.com/napi-rs/napi-rs) 做了一些处理，使得基本上在鸿蒙上可用并且用法基本对齐。
 
-::: danger
-目前项目处于开发阶段，请谨慎使用！
-:::
-
 ## 一个简单的 🌰
 
 现在我们可以基于 ohos-rs 实现一个简单的函数，其名为 `add`

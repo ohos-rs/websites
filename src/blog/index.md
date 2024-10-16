@@ -2,4 +2,4 @@
 editLink: true
 ---
 
-We'll be publishing updates about the repository changes on this blog.
+我们将在这里发布一些文章以及项目的更新日志。
