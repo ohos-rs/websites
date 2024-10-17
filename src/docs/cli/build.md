@@ -60,3 +60,47 @@ ohrs build --arch aarch
 ```shell
 ohrs build --arch aarch --arch x64
 ```
+
+### 为类型定义文件注入自定义头
+
+在鸿蒙开发中，我们某些场景下需要使用类型重写以完善相关的实现代码类型。比如我们在使用 `raw-file` 模块来使用鸿蒙的应用文件：
+
+```rust
+use napi_derive_ohos::napi;
+use napi_ohos::{bindgen_prelude::Object, Env};
+use ohos_raw_binding::Raw;
+
+#[napi]
+pub fn raw_example(
+    env: Env,
+    #[napi(ts_arg_type = "resourceManager.ResourceManager")] resource_manager: Object,
+) -> i32 {
+    let raw_manager = Raw::new(env, resource_manager);
+    let raw_dir = raw_manager.open_dir("");
+    let count = raw_dir.count();
+    count
+}
+```
+
+如果直接这样写的话，生成的文件会因为缺失 `resourceManager` 的类型导致最终使用时的类型错误或者无效，因此我们需要在生成的文件中引入这部分内容。
+
+```ts
+// index.d.ts 文件
+
+// 额外新增的内容
+import { resourceManager } from '@kit.LocalizationKit';
+
+// 生成内容
+// xxx
+```
+
+而为了避免手动处理，我们允许在项目的 `Cargo.toml` 文件中定义通用代码，ohrs 在最终构建的时候会将其插入到生成的类型文件中去。
+
+```toml
+[package]
+# 默认配置
+
+# 自定义内容配置如下所示。
+[package.metadata.template]
+header = "import { resourceManager } from '@kit.LocalizationKit';"
+```
