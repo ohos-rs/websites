@@ -75,3 +75,14 @@ ohrs init hello
 ```shell
 ohrs build
 ```
+
+## IDE 提示
+
+对于升级到 `1.0.0` 版本的项目来说，可能会遇到某些能力或者 API 不支持的情况。这是因为 `rust-analyzer` 在默认情况下使用本机的 target 作为默认的构建 target。为了避免出现这种问题，我们可以修改 rust-analyzer 的默认构建产物为鸿蒙的产物，以 VS Code 为例其配置如下所示：
+
+```json
+// .vscode/settings.json
+{
+    "rust-analyzer.cargo.target": "aarch64-unknown-linux-ohos"
+}
+```
