@@ -16,3 +16,15 @@ ohrs cargo expand
 ```
 
 实际上就是提供了 ohos 的构建环境去执行`cargo expand`命令。
+
+## 参数
+
+### -a/--arch 
+
+指定构建架构，支持 `arm64/aarch`, `arm/arm32`, `x86_64/x64`。
+
+默认构建 `arm64` 构架目标。
+
+### --disable-target
+
+不传入默认的构建目标架构参数。
