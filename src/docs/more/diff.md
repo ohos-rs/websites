@@ -53,6 +53,9 @@ pub fn create_symbol_from_js_string(&self, description: JsString) -> Result<JsSy
 
 目前系统对于 `napi_create_buffer` 底层在实现上会强行校验 length 会导致无法创建空 buffer，而目前鸿蒙系统上 buffer 与 arraybuffer 表现一致，因此暂时使用 `napi_create_arraybuffer` 进行替换，参考 [PR](https://github.com/ohos-rs/ohos-rs/pull/92)
 
+### Copy Buffer 失败
+`napi_create_buffer` 和 `napi_create_buffer_copy` 不接受传入空数组， **目前无任何规避方案**。
+
 ## ArrayBuffer 差异
 
 相关修复 [PR](https://github.com/ohos-rs/ohos-rs/pull/92)
@@ -90,4 +93,18 @@ napi_wrap(env,
             &obj->wrapper_);
 
 napi_reference_unref(env, obj->wrapper_, nullptr); // [!code ++]
+```
+
+## napi_get_cb_info 获取 this 为 undefined
+
+`napi_get_cb_info` 我们在某些场景下，需要获取 this 参数用于 `napi_wrap` 绑定一个 native 对象到 this 上，但是目前鸿蒙上实现有一定的差异。我们在最终的使用上需要额外注意：
+
+```ts
+// ❌ 不能使用下面这种方式调用
+import { test } from 'libhello.so' 
+
+// ✅ 使用此写法进行调用
+import napiTest from 'libhello.so'
+
+napiTest.test()
 ```
