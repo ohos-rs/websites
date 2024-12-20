@@ -17,7 +17,7 @@ export const zh = defineConfig({
 				text: "关于",
 				items: [
 					{ text: "Logo", link: "/about/" },
-					{ text: "Issue", link: "https://github.com/ohos-rs/example/issues" },
+					{ text: "Issue", link: "https://github.com/ohos-rs/ohos-rs/issues" },
 				],
 			},
 		],

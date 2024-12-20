@@ -18,7 +18,7 @@ export const en = defineConfig({
 				text: "About",
 				items: [
 					{ text: "Logo", link: "/en/about/" },
-					{ text: "Issue", link: "https://github.com/ohos-rs/example/issues" },
+					{ text: "Issue", link: "https://github.com/ohos-rs/ohos-rs/issues" },
 				],
 			},
 		],
