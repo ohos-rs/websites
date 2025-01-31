@@ -48,6 +48,9 @@ rustup target add x86_64-unknown-linux-ohos
 # 一般来说 SDK 目录下面都有多个版本，选择你自己需要使用的版本即可。
 # 对于 unix 系统的用户来说请务必使用 export 否则会导致读取不到环境变量
 export OHOS_NDK_HOME=/path/Sdk/9/
+
+# 对于 5.0.0 release 的 IDE 来说他的路径示例如下所示：
+export OHOS_NDK_HOME=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony
 ```
 
 设置完成之后，我们可以尝试查看环境变量的内容，效果如下所示：

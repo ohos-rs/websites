@@ -26,18 +26,14 @@ For more detail about rust, you can visit [link](https://www.rust-lang.org/learn
 
 And then we need to install some toolchain and component, which will help use to build prebuild binary for HarmonyOS.
 
-1. **nightly toolchain**
+1. **toolchain**
 
-   OpenHarmony is `tier3` target for rust, so we must use custom toolchain or use source-code to build it.
-   Just run this command and set toolchain to `nightly`
+   OpenHarmony is `tier2` target for rust, so we must use custom toolchain or use source-code to build it.
+   Just run this command and install toolchains
    ```shell
-   rustup default nightly
-   ```
-2. **rust-std**   
-
-    Then we need to install source code. Just run this command
-   ```shell
-   rustup component add rust-src
+   rustup target add aarch64-unknown-linux-ohos
+   rustup target add armv7-unknown-linux-ohos
+   rustup target add x86_64-unknown-linux-ohos
    ```
    
 ### HarmonyOS NDK
