@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.1",
-    "vitepress": "^1.2.3"
+    "vitepress": "^2.0.0-alpha.3"
   }
 }
