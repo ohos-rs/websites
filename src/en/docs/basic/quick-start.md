@@ -44,6 +44,16 @@ For the latest SDK Version, You need `DevEco Studio NEXT Developer Beta1 (5.0.3.
 
 You just need to download the latest `DevEco-Studio` and download the latest SDK. You can download it with [official website](https://developer.huawei.com/consumer/cn/deveco-studio/)
 
+And then we need to set env variable to use it. If your install path is `/path/Sdk` , you can run the following command: 
+
+```shell
+# For 4.0 or older version
+export OHOS_NDK_HOME=/path/Sdk/9/
+
+# For 5.0 or newer version
+export OHOS_NDK_HOME=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony
+```
+
 ## Install
 
 Now, you can install cli tool with `cargo`.
