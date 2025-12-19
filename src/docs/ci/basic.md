@@ -2,7 +2,7 @@
 editLink: true
 ---
 
-# CI 
+# CI
 
 目前 ohos 生态提供了简单版本的 CI 环境以执行一些逻辑，更多的能力需要在 HarmonyOS/OpenHarmony 支持后提供。
 

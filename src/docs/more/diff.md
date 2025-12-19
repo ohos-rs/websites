@@ -54,6 +54,7 @@ pub fn create_symbol_from_js_string(&self, description: JsString) -> Result<JsSy
 目前系统对于 `napi_create_buffer` 底层在实现上会强行校验 length 会导致无法创建空 buffer，而目前鸿蒙系统上 buffer 与 arraybuffer 表现一致，因此暂时使用 `napi_create_arraybuffer` 进行替换，参考 [PR](https://github.com/ohos-rs/ohos-rs/pull/92)
 
 ### Copy Buffer 失败
+
 `napi_create_buffer` 和 `napi_create_buffer_copy` 不接受传入空数组， **目前无任何规避方案**。
 
 ## ArrayBuffer 差异
@@ -75,8 +76,7 @@ napi_status status = napi_create_arraybuffer(env, 0, &data, &buf); // [!code ++]
 
 ### napi_get_typedarray_info 获取的参数含义不一致
 
-在鸿蒙的实现上，通过`napi_get_typedarray_info` 获取到的 TypedArray 的 `length` 实际值为：数组长度 * 字节长度，因此在取值的时候需要除于对应类型的字节长度，从而获取到最终真实的长度。
-
+在鸿蒙的实现上，通过`napi_get_typedarray_info` 获取到的 TypedArray 的 `length` 实际值为：数组长度 \* 字节长度，因此在取值的时候需要除于对应类型的字节长度，从而获取到最终真实的长度。
 
 ## napi_wrap 差异
 
@@ -101,7 +101,7 @@ napi_reference_unref(env, obj->wrapper_, nullptr); // [!code ++]
 
 ```ts
 // ❌ 不能使用下面这种方式调用
-import { test } from 'libhello.so' 
+import { test } from 'libhello.so'
 
 // ✅ 使用此写法进行调用
 import napiTest from 'libhello.so'

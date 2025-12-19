@@ -22,9 +22,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ::: tip 🌈
+
 1. 你需要确保你安装的 Rust 版本是 >= 1.78.0 的
 2. 更多关于 Rust 的信息和知识点，你可以访问 [link](https://www.rust-lang.org/learn/get-started)
-:::
+   :::
 
 然后我们需要安装一些 Rust 的 toolchain 来帮助我们构建鸿蒙的原生模块。
 
@@ -33,7 +34,7 @@ rustup target add aarch64-unknown-linux-ohos
 rustup target add armv7-unknown-linux-ohos
 rustup target add x86_64-unknown-linux-ohos
 ```
-   
+
 ### HarmonyOS NDK
 
 ::: tip

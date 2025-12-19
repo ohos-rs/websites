@@ -4,10 +4,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "format": "biome format --write ."
+    "format": "oxfmt format --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.1",
-    "vitepress": "^2.0.0-alpha.3"
+    "oxfmt": "^0.19.0",
+    "vitepress": "^2.0.0-alpha.15"
   }
 }

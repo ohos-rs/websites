@@ -78,6 +78,7 @@ pub fn run_ts_fn(left: i32, right: i32, func: ThreadsafeFunction<i32, bool>) {
 ```
 
 该函数对于上层调用的函数签名如下所示：
+
 ```ts
 export declare function runTsFn(left: number, right: number, func: (err: Error | null, arg: number) => boolean): void
 ```

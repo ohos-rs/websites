@@ -1,45 +1,43 @@
 import { DefaultTheme } from "vitepress";
 
 export const EcosystemSideBar: DefaultTheme.SidebarItem[] = [
-	{
-		text: "@ohos-rs",
-		collapsed: false,
-		items: [
-			{ text: "crc32", link: "/ecosystem/package/crc32" },
-			{ text: "jieba", link: "/ecosystem/package/jieba" },
-			{ text: "argon2", link: "/ecosystem/package/argon2" },
-			{ text: "bcrypt", link: "/ecosystem/package/bcrypt" },
-			{ text: "jsonwebtoken", link: "/ecosystem/package/jsonwebtoken" },
-			{ text: "snappy", link: "/ecosystem/package/snappy" },
-			{ text: "xxhash", link: "/ecosystem/package/xxhash" },
-			{ text: "image", link: "/ecosystem/package/image" },
-		],
-	},
-	{
-		text: "原生模块绑定",
-		collapsed: false,
-		items: [
-			{ text: "hilog", link: "/ecosystem/binding/hilog" },
-			{ text: "init", link: "/ecosystem/binding/init" },
-		],
-	},
-	{
-		text: "Polyfill",
-		collapsed: false,
-		items: [
-			{ text: "AbortController", link: "/ecosystem/polyfill/abort-controller" },
-		],
-	},
-	{
-		text: "第三方能力",
-		collapsed: false,
-		items: [
-			{ text: "OpenSSL", link: "/ecosystem/third/openssl" },
-			{ text: "cURL", link: "/ecosystem/third/curl" },
-			{ text: "MMKV", link: "/ecosystem/third/mmkv" },
-			{ text: "avif", link: "/ecosystem/third/avif" },
-			{ text: "cronet", link: "/ecosystem/third/cronet" },
-			{ text: "BoringSSL", link: "/ecosystem/third/boringssl" },
-		],
-	},
+  {
+    text: "@ohos-rs",
+    collapsed: false,
+    items: [
+      { text: "crc32", link: "/ecosystem/package/crc32" },
+      { text: "jieba", link: "/ecosystem/package/jieba" },
+      { text: "argon2", link: "/ecosystem/package/argon2" },
+      { text: "bcrypt", link: "/ecosystem/package/bcrypt" },
+      { text: "jsonwebtoken", link: "/ecosystem/package/jsonwebtoken" },
+      { text: "snappy", link: "/ecosystem/package/snappy" },
+      { text: "xxhash", link: "/ecosystem/package/xxhash" },
+      { text: "image", link: "/ecosystem/package/image" },
+    ],
+  },
+  {
+    text: "原生模块绑定",
+    collapsed: false,
+    items: [
+      { text: "hilog", link: "/ecosystem/binding/hilog" },
+      { text: "init", link: "/ecosystem/binding/init" },
+    ],
+  },
+  {
+    text: "Polyfill",
+    collapsed: false,
+    items: [{ text: "AbortController", link: "/ecosystem/polyfill/abort-controller" }],
+  },
+  {
+    text: "第三方能力",
+    collapsed: false,
+    items: [
+      { text: "OpenSSL", link: "/ecosystem/third/openssl" },
+      { text: "cURL", link: "/ecosystem/third/curl" },
+      { text: "MMKV", link: "/ecosystem/third/mmkv" },
+      { text: "avif", link: "/ecosystem/third/avif" },
+      { text: "cronet", link: "/ecosystem/third/cronet" },
+      { text: "BoringSSL", link: "/ecosystem/third/boringssl" },
+    ],
+  },
 ];

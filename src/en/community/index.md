@@ -12,7 +12,7 @@ a [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls). We'd be
 thrilled to know about it and showcase it here.
 
 | Application Name | Icon                          | More Info |
-|------------------|-------------------------------|-----------|
+| ---------------- | ----------------------------- | --------- |
 | Sample           | Reference icon from subfolder | ...       |
 
 ## Package
@@ -22,6 +22,6 @@ submit a [Pull Request](https://github.com/ohos-rs/ohos-rs.github.io/pulls). We'
 here.
 
 | Package Name                                                 | Description                                                                         | More Info                                                                       |
-|--------------------------------------------------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [@kingtous/reqwest](https://gitee.com/Kingtous/ohos_reqwest) | A [reqwest](https://crates.io/crates/reqwest) binding  for OpenHarmony/HarmonyOS    | With prebuilt [rustls](https://github.com/rustls/rustls), no openssl is needed. |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [@kingtous/reqwest](https://gitee.com/Kingtous/ohos_reqwest) | A [reqwest](https://crates.io/crates/reqwest) binding for OpenHarmony/HarmonyOS     | With prebuilt [rustls](https://github.com/rustls/rustls), no openssl is needed. |
 | [@kingtous/uuid](https://gitee.com/Kingtous/ohos_uuid)       | The missing [UUID](https://crates.io/crates/uuid) library for OpenHarmony/HarmonyOS | UUID generation and validation.                                                 |

@@ -19,7 +19,7 @@ ohrs cargo expand
 
 ## 参数
 
-### -a/--arch 
+### -a/--arch
 
 指定构建架构，支持 `arm64/aarch`, `arm/arm32`, `x86_64/x64`。
 

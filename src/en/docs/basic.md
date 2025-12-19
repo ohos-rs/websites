@@ -1,9 +1,9 @@
 ---
 editLink: true
 ---
+
 > [!IMPORTANT] Star
 > **If you find this project helpful, we'd appreciate it if you could give us a [star](https://github.com/ohos-rs/ohos-rs). Thank you!**
-
 
 ## What's the `ohos-rs`?
 
@@ -25,7 +25,6 @@ pub fn add(left: u32, right: u32) -> u32 {
   left + right
 }
 ```
-
 
 In HarmonyOS, we can call it with some code.
 

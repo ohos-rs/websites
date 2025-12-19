@@ -8,7 +8,7 @@ outline: "deep"
 对于 llvm 15 或者更高的版本， emu-tls 以及相关的 symbol 符号已经被移动到了 `libc++.so` and `libclang_rt.builtins.a` 文件中。因此如果你出现了类似于下面的这种报错，请考虑新增链接文件：
 
 ::: danger Error
-__emutls_get_address: symbol not found
+\_\_emutls_get_address: symbol not found
 :::
 
 ### 如何解决？

@@ -10,10 +10,11 @@ outline: "deep"
 In September 2023, I officially started working with native HarmonyOS application development. After reading through the developer documentation, I realized it might have an architecture similar to Node.js, which immediately led me to consider trying to develop its native modules using Rust.
 
 ### Start
+
 On October 9, 2023, I completed the capability verification of the prototype, officially running Rust-compiled code on the HarmonyOS system.
 
-
 ### Adaptation
+
 On November 7, 2023, I decided to adapt `napi-rs` to the HarmonyOS system for native module development. By the 9th, I had completed the first version of development, which I named `ohos-rs`.
 
 At this time, the system was still in the API9 stage, with many N-API features unsupported. So, I proposed to the system side the need for complete N-API interfaces, which were gradually opened up afterwards.
@@ -48,4 +49,3 @@ We strongly recommend that you upgrade both the scaffolding and corresponding cr
 Hereafter, we will use API12 as the adaptation baseline. The capabilities of all subsequent new versions and system bindings will be provided in a manner similar to napi-rs adaptation, through 'features', and we will continuously update related documentation examples and toolchains.
 
 Finally, we hope our work will be helpful to your work ~
-

@@ -2,6 +2,6 @@
 editLink: true
 ---
 
-# CI 
+# CI
 
 todo

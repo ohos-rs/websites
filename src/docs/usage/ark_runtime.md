@@ -10,7 +10,7 @@ editLink: true
 1. ArkRuntime 是非线程安全的，在当前线程创建的 ArkRuntime 不能在其他线程使用。
 2. ArkRuntime 的创建和销毁需要消耗一定的性能，因此不建议在频繁创建和销毁的场景中使用。
 3. 每个 ArkRuntime 实例都独占当前的线程，每个线程只能存在一个 ArkRuntime 实例。
-:::
+   :::
 
 ArkRuntime 是鸿蒙特有的拓展能力，旨在为我们提供在 Native 创建虚拟机运行 ArkTS 代码，从而减少在主线程运行代码的成本。
 
