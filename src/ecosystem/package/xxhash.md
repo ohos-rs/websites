@@ -11,6 +11,7 @@ Fastest Snappy compression library in `OpenHarmony`, powered by `ohos-rs` and `r
 ```shell
 ohpm install @ohos-rs/xxhash
 ```
+
 ## API
 
 ```ts

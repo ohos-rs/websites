@@ -6,7 +6,7 @@ editLink: true
 
 BoringSSL is a fork of OpenSSL that is designed to meet Google's needs.
 
-The rust community also provides the corresponding crate  [boringssl](https://github.com/cloudflare/boring). The relevant openharmony adaptation has been submitted, you can refer to this [PR](https://github.com/cloudflare/boring/pull/231).
+The rust community also provides the corresponding crate [boringssl](https://github.com/cloudflare/boring). The relevant openharmony adaptation has been submitted, you can refer to this [PR](https://github.com/cloudflare/boring/pull/231).
 
 You can wait for the PR to merge or directly reference through git.
 
@@ -26,7 +26,8 @@ export CMAKE_TOOLCHAIN_FILE=${OHOS_NDK_HOME}/native/build/cmake/ohos.toolchain.c
 boring = { git="https://github.com/ohos-rs/boring" }
 ```
 
-Source Code: 
+Source Code:
+
 ```rust
 use boring::sha;
 use napi_derive_ohos::napi;
@@ -53,8 +54,6 @@ const a = h();
 
 You can find the example [here](https://github.com/ohos-rs/example/tree/main/example/boring_ssl).
 
-
 ## More
 
 We also offer precompiled build outputs, which you can either use right away or custom-build as per your requirements. You can find it with [Repo](https://github.com/ohos-rs/ohos-boringssl)
-

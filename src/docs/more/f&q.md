@@ -29,7 +29,6 @@ strip = true
 
 你可以参考 [OpenSSL](https://github.com/ohos-rs/ohos-openssl) 的鸿蒙适配来适配你的 SDK 。
 
-
 ## 为什么运行单元测试报错？
 
 本质上这里的单元测试是构建了一个可执行程序，如果运行正常，那么意味着我们的代码是正确的。而 N-API 相关的代码都是 native 与上层虚拟机之间的通信代码并且是 HarmonyOS 平台的构建产物自然是不能够在你当前设备环境运行。

@@ -37,10 +37,10 @@ pub trait Task: Send + Sized {
 
 For us, we must implement the basic method: `compute` `resolve`.
 
-**compute**   
+**compute**  
 This method will be executed in `libuv` with sub thread.
 
-**resolve**   
+**resolve**  
 This method will be executed in the main thread.
 
 ::: warning
@@ -92,6 +92,7 @@ impl Task for ComputeFib {
 Finally just to register a method for `ArkTS`, the function's sign should be below here:
 
 ::: code-group
+
 ```rust [lib.rs]
 // register method
 #[napi(ts_return_type="Promise<number>")]
@@ -106,6 +107,7 @@ pub fn fib(env: Env, init: u32) -> Result<JsObject> {
 // ts declare
 export function fib(init: number): Promise<number>
 ```
+
 :::
 
 Now we can use it in `ArkTS`.

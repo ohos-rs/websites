@@ -6,7 +6,6 @@ editLink: true
 
 This is a binding crate for HarmonyOS's `init`.
 
-
 ## Install
 
 ```shell

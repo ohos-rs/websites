@@ -30,12 +30,13 @@ And then we need to install some toolchain and component, which will help use to
 
    OpenHarmony is `tier2` target for rust, so we must use custom toolchain or use source-code to build it.
    Just run this command and install toolchains
+
    ```shell
    rustup target add aarch64-unknown-linux-ohos
    rustup target add armv7-unknown-linux-ohos
    rustup target add x86_64-unknown-linux-ohos
    ```
-   
+
 ### HarmonyOS NDK
 
 ::: tip
@@ -44,7 +45,7 @@ For the latest SDK Version, You need `DevEco Studio NEXT Developer Beta1 (5.0.3.
 
 You just need to download the latest `DevEco-Studio` and download the latest SDK. You can download it with [official website](https://developer.huawei.com/consumer/cn/deveco-studio/)
 
-And then we need to set env variable to use it. If your install path is `/path/Sdk` , you can run the following command: 
+And then we need to set env variable to use it. If your install path is `/path/Sdk` , you can run the following command:
 
 ```shell
 # For 4.0 or older version

@@ -17,12 +17,12 @@ ohrs build
 
 ## 参数
 
-| 参数      | 描述                                                | 类型        | 使用示例                      |
-|---------|:--------------------------------------------------|:----------|:--------------------------|
-| release | 构建模式，默认为`debug`模式，设置后将构建`release`产物               | `boolean` | `ohrs build --release`    |
-| dist    | 收集产物的最终输出文件夹                                      | `string`  | `ohrs build --dist=test`  |
+| 参数    | 描述                                                        | 类型      | 使用示例                  |
+| ------- | :---------------------------------------------------------- | :-------- | :------------------------ |
+| release | 构建模式，默认为`debug`模式，设置后将构建`release`产物      | `boolean` | `ohrs build --release`    |
+| dist    | 收集产物的最终输出文件夹                                    | `string`  | `ohrs build --dist=test`  |
 | arch    | 构建的目标架构，支持 `arm64/aarch` `arm/arm32` `x86_64/x64` | `string`  | `ohrs build --arch=aarch` |
-| static  | 复制产物到 `dist`时是否复制依赖的静态链接库，默认为`false`              | `boolean` | `ohrs build --static`     |
+| static  | 复制产物到 `dist`时是否复制依赖的静态链接库，默认为`false`  | `boolean` | `ohrs build --static`     |
 
 ## 额外的一些使用案例
 

@@ -31,7 +31,6 @@ And the final prebuild binary's name will be `libxx.so`.
 
 ## Arguments
 
-
 | Options | description                                                                                                                                         | type                | default |
-|---------|:----------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|:--------|
+| ------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :------ |
 | package | This will generate an OHPM package, which won't be created by default. If you input a string, it will replace the `name` field in oh-package.json5. | `boolean \| string` | false   |

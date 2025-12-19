@@ -1,9 +1,9 @@
 ---
 editLink: true
 ---
+
 > [!IMPORTANT] ✨
 > **如果该项目对您有一定的帮助，请不吝给我们点一个 [star](https://github.com/ohos-rs/ohos-rs)。非常感谢！**
-
 
 ## 什么是 `ohos-rs`?
 
@@ -21,7 +21,6 @@ pub fn add(left: u32, right: u32) -> u32 {
   left + right
 }
 ```
-
 
 在鸿蒙上层的 ArkTS 里可以像下面这样调用：
 
