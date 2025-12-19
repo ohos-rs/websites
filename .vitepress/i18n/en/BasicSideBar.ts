@@ -30,7 +30,10 @@ export const BasicSideBar: DefaultTheme.SidebarItem[] = [
   {
     text: "CD/CD",
     collapsed: false,
-    items: [{ text: "CI", link: "/en/docs/ci/basic.md" }],
+    items: [
+      { text: "CI", link: "/en/docs/ci/basic.md" },
+      { text: "zig-build", link: "/en/docs/ci/zig.md" },
+    ],
   },
   {
     text: "More",
