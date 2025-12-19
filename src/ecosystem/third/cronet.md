@@ -12,4 +12,4 @@ Cronet is a network request library developed by the Google team to replace `cur
 2. To get it operational on HarmonyOS, we need to supply some extra patches for platform compatibility, and the source code package is excessively large.
 :::
 
-You can refer to this [guide](https://gitee.com/openharmony-sig/tpc_c_cplusplus/tree/master/thirdparty/cronet) to build the required `.so` file.
+You can refer to this [guide](https://gitee.com/han_jin_fei/lycium/tree/master/main/cronet) to build the required `.so` file.
