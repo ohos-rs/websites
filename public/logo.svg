@@ -1,0 +1,82 @@
+<svg id="svg格式" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="914" height="914" viewBox="0 0 914 914">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d5e5ff;
+      }
+
+      .cls-1, .cls-10, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #0a59f7;
+        filter: url(#filter);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: #9d2d0c;
+        filter: url(#filter-2);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-10, .cls-8 {
+        fill: #00000e;
+      }
+    </style>
+    <filter id="filter" x="153" y="287" width="608" height="53" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="153" y="287" width="608" height="53" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjA4IiBoZWlnaHQ9IjUzIiB2aWV3Qm94PSIwIDAgNjA4IDUzIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjI7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2MDgiIHkxPSIyNi41IiB4Mj0iMCIgeTI9IjI2LjUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDQwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI2MDgiIGhlaWdodD0iNTMiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="overlay" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="728" y1="535.938" x2="728" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e65418"/>
+      <stop offset="1" stop-color="#f7952a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="297" y1="536" x2="297" xlink:href="#linear-gradient"/>
+    <filter id="filter-2" x="270.125" y="545" width="481.094" height="186.219" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="270.125" y="545" width="481.094" height="186.219" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgxLjA5NCIgaGVpZ2h0PSIxODYuMjE5IiB2aWV3Qm94PSIwIDAgNDgxLjA5NCAxODYuMjE5Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjI7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI0ODEuMDk0IiB5MT0iOTMuMTEiIHgyPSIwIiB5Mj0iOTMuMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDQwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0ODEuMDk0IiBoZWlnaHQ9IjE4Ni4yMTkiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="overlay" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="512" y1="767.969" x2="512" y2="400.969" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4460f"/>
+      <stop offset="1" stop-color="#f58e28"/>
+    </linearGradient>
+  </defs>
+  <g id="组_3" data-name="组 3">
+    <path id="椭圆_3" data-name="椭圆 3" class="cls-1" d="M512,55c252.394,0,457,204.606,457,457S764.394,969,512,969,55,764.394,55,512,259.606,55,512,55Zm0,56c221.466,0,401,179.534,401,401S733.466,913,512,913,111,733.466,111,512,290.534,111,512,111Z" transform="translate(-55 -55)"/>
+    <path id="椭圆_3_拷贝" data-name="椭圆 3 拷贝" class="cls-2" d="M512,66c246.319,0,446,199.681,446,446S758.319,958,512,958,66,758.319,66,512,265.681,66,512,66Zm0,33.692c227.539,0,412,184.6,412,412.308S739.539,924.308,512,924.308,100.005,739.711,100.005,512,284.461,99.692,512,99.692Z" transform="translate(-55 -55)"/>
+  </g>
+  <g id="组_4" data-name="组 4">
+    <rect id="矩形_1" data-name="矩形 1" class="cls-3" x="153" y="287" width="608" height="53" rx="13" ry="13"/>
+    <g id="组_5" data-name="组 5">
+      <g id="组_6" data-name="组 6">
+        <path id="形状_5_拷贝" data-name="形状 5 拷贝" class="cls-4" d="M750.308,452.693c0.362,35.244-20.13,66.118-44.5,80.918a15.955,15.955,0,1,1-16.671-27.21c12.361-7.509,27.59-25.344,29.115-48.56-23.938-5.726-42.261-32.079-42.261-63.338H728l-9.583-63.4A42.256,42.256,0,0,1,728,330C756.527,330,780,359.116,780,394.5,780,420.01,767.8,442.257,750.308,452.693Z" transform="translate(-55 -55)"/>
+        <path id="形状_5_拷贝_2" data-name="形状 5 拷贝 2" class="cls-5" d="M274.692,452.73c-0.362,35.255,20.13,66.138,44.5,80.943a15.959,15.959,0,1,0,16.671-27.219c-12.361-7.51-27.59-25.351-29.115-48.574,23.938-5.728,42.261-32.089,42.261-63.357H297l9.583-63.421A42.256,42.256,0,0,0,297,330c-28.53,0-52,29.128-52,64.526C245,420.037,257.2,442.291,274.692,452.73Z" transform="translate(-55 -55)"/>
+      </g>
+      <path id="形状_2" data-name="形状 2" class="cls-6" d="M750.6,654.439l-11.133-9.72a35.478,35.478,0,0,0,1.862-11.266c0-48.849-103.755-88.448-231.744-88.448s-231.744,39.6-231.744,88.448a35.823,35.823,0,0,0,2.393,12.715l-9.473,8.271a1.849,1.849,0,0,0-.242,2.537l57.632,73.515a1.871,1.871,0,0,0,3.186-1.91L307.689,676.9c39.772,26.864,115.277,45,201.891,45,89.015,0,166.294-19.158,205.113-47.256l-24.674,53.937a1.871,1.871,0,0,0,3.186,1.91l57.631-73.515A1.848,1.848,0,0,0,750.6,654.439Z" transform="translate(-55 -55)"/>
+      <path id="形状_1" data-name="形状 1" class="cls-7" d="M795.163,660.673c-11.334-12.68-33.819-37.158-43.474-47.651a6.1,6.1,0,0,1,1.127-4.674l16.764-22.359a6.2,6.2,0,0,0-3.635-9.768l-27.355-6.1a6.2,6.2,0,0,1-4.284-8.691l11.9-25.26a6.208,6.208,0,0,0-5.537-8.84l-28.028-.493a6.213,6.213,0,0,1-5.954-7.655l6.546-27.126a6.22,6.22,0,0,0-7.211-7.55l-27.554,5.132a6.228,6.228,0,0,1-7.381-6.306l0.925-27.882a6.233,6.233,0,0,0-8.591-5.951l-25.951,10.547a6.239,6.239,0,0,1-8.5-4.7l-4.734-27.5a6.243,6.243,0,0,0-9.619-4.107l-23.287,15.53a6.25,6.25,0,0,1-9.281-2.9l-10.2-25.986a6.25,6.25,0,0,0-10.253-2.1l-19.669,19.877a6.254,6.254,0,0,1-9.677-.979L517,403.782a6.254,6.254,0,0,0-10.467,0l-15.246,23.411a6.255,6.255,0,0,1-9.678.979L461.939,408.3a6.251,6.251,0,0,0-10.253,2.1l-10.2,25.986a6.251,6.251,0,0,1-9.282,2.9l-23.287-15.53a6.243,6.243,0,0,0-9.619,4.107l-4.733,27.5a6.239,6.239,0,0,1-8.5,4.7L360.11,449.5a6.233,6.233,0,0,0-8.591,5.951l0.925,27.882a6.228,6.228,0,0,1-7.381,6.306l-27.554-5.132a6.22,6.22,0,0,0-7.211,7.55l6.546,27.126a6.213,6.213,0,0,1-5.954,7.655l-28.028.493a6.208,6.208,0,0,0-5.537,8.84l11.9,25.26a6.2,6.2,0,0,1-4.284,8.691l-27.355,6.1a6.2,6.2,0,0,0-3.635,9.768l16.765,22.359a6.15,6.15,0,0,1,1.03,5.29c-9.943,10.808-31.79,34.6-42.908,47.035a11.164,11.164,0,0,0,.3,15.218l88.248,91.372a2.243,2.243,0,0,0,3.578-2.643l-47.049-83.431a9.918,9.918,0,0,1,2.331-12.523l17.376-14.36c60.751,31.146,136.256,49.648,218.141,49.648,82.016,0,157.667-18.532,218.467-49.767l17.52,14.479a9.917,9.917,0,0,1,2.332,12.523L703.035,764.62a2.243,2.243,0,0,0,3.578,2.643l88.248-91.372A11.164,11.164,0,0,0,795.163,660.673Z" transform="translate(-55 -55)"/>
+      <ellipse id="椭圆_2" data-name="椭圆 2" class="cls-8" cx="415" cy="565" rx="33" ry="35"/>
+      <ellipse id="椭圆_2_拷贝" data-name="椭圆 2 拷贝" class="cls-9" cx="401.5" cy="549.5" rx="12.5" ry="15.5"/>
+      <ellipse id="椭圆_2_拷贝_2" data-name="椭圆 2 拷贝 2" class="cls-8" cx="518" cy="565" rx="33" ry="35"/>
+      <path id="形状_3" data-name="形状 3" class="cls-10" d="M522.979,664.991c8.656,0,15.9-5.624,17.776-13.168a3.221,3.221,0,0,0-3.3-3.85H508.508a3.221,3.221,0,0,0-3.305,3.85C507.073,659.367,514.322,664.991,522.979,664.991Z" transform="translate(-55 -55)"/>
+      <ellipse id="椭圆_2_拷贝_2-2" data-name="椭圆 2 拷贝 2" class="cls-9" cx="504.5" cy="549.5" rx="12.5" ry="15.5"/>
+    </g>
+  </g>
+</svg>

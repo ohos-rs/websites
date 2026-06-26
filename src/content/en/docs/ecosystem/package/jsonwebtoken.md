@@ -1,0 +1,199 @@
+---
+editLink: true
+---
+
+# @ohos-rs/jsonwebtoken
+
+🚀 Fastest jsonwebtoken in OpenHarmony.
+
+## Install
+
+```shell
+ohpm install @ohos-rs/jsonwebtoken
+```
+
+## API
+
+```ts
+import buffer from '@ohos.buffer';
+export const enum Algorithm {
+    /** HMAC using SHA-256 */
+    HS256 = 0,
+    /** HMAC using SHA-384 */
+    HS384 = 1,
+    /** HMAC using SHA-512 */
+    HS512 = 2,
+    /** ECDSA using SHA-256 */
+    ES256 = 3,
+    /** ECDSA using SHA-384 */
+    ES384 = 4,
+    /** RSASSA-PKCS1-v1_5 using SHA-256 */
+    RS256 = 5,
+    /** RSASSA-PKCS1-v1_5 using SHA-384 */
+    RS384 = 6,
+    /** RSASSA-PKCS1-v1_5 using SHA-512 */
+    RS512 = 7,
+    /** RSASSA-PSS using SHA-256 */
+    PS256 = 8,
+    /** RSASSA-PSS using SHA-384 */
+    PS384 = 9,
+    /** RSASSA-PSS using SHA-512 */
+    PS512 = 10,
+    /** Edwards-curve Digital Signature Algorithm (EdDSA) */
+    EdDSA = 11
+}
+
+
+export interface Header {
+    /**
+     * The algorithm used
+     *
+     * Defined in [RFC7515#4.1.1](https://tools.ietf.org/html/rfc7515#section-4.1.1).
+     * Default to `HS256`
+     */
+    algorithm?: Algorithm
+    /**
+     * Content type
+     *
+     * Defined in [RFC7519#5.2](https://tools.ietf.org/html/rfc7519#section-5.2).
+     */
+    contentType?: string
+    /**
+     * JSON Key URL
+     *
+     * Defined in [RFC7515#4.1.2](https://tools.ietf.org/html/rfc7515#section-4.1.2).
+     */
+    jsonKeyUrl?: string
+    /**
+     * JSON Web Key
+     *
+     * Defined in [RFC7515#4.1.3](https://tools.ietf.org/html/rfc7515#section-4.1.3).
+     * Key ID
+     *
+     * Defined in [RFC7515#4.1.4](https://tools.ietf.org/html/rfc7515#section-4.1.4).
+     */
+    keyId?: string
+    /**
+     * X.509 URL
+     *
+     * Defined in [RFC7515#4.1.5](https://tools.ietf.org/html/rfc7515#section-4.1.5).
+     */
+    x5Url?: string
+    /**
+     * X.509 certificate chain. A Vec of base64 encoded ASN.1 DER certificates.
+     *
+     * Defined in [RFC7515#4.1.6](https://tools.ietf.org/html/rfc7515#section-4.1.6).
+     */
+    x5CertChain?: Array<string>
+    /**
+     * X.509 SHA1 certificate thumbprint
+     *
+     * Defined in [RFC7515#4.1.7](https://tools.ietf.org/html/rfc7515#section-4.1.7).
+     */
+    x5CertThumbprint?: string
+    /**
+     * X.509 SHA256 certificate thumbprint
+     *
+     * Defined in [RFC7515#4.1.8](https://tools.ietf.org/html/rfc7515#section-4.1.8).
+     *
+     * This will be serialized/deserialized as "x5t#S256", as defined by the RFC.
+     */
+    x5TS256CertThumbprint?: string
+}
+
+
+export interface Validation {
+    /**
+     * If it contains a value, the validation will check that the `aud` field is a member of the
+     * audience provided and will error otherwise.
+     *
+     * Defaults to an empty collection.
+     */
+    aud?: Array<string>
+    /**
+     * Which claims are required to be present before starting the validation.
+     * This does not interact with the various `validate_*`. If you remove `exp` from that list, you still need
+     * to set `validate_exp` to `false`.
+     * The only value that will be used are "exp", "nbf", "aud", "iss", "sub". Anything else will be ignored.
+     *
+     * Defaults to `exp`.
+     */
+    requiredSpecClaims?: Array<string>
+    /**
+     * Add some leeway (in seconds) to the `exp` and `nbf` validation to
+     * account for clock skew.
+     *
+     * Defaults to `60`.
+     */
+    leeway?: number
+    /**
+     * Whether to validate the `exp` field.
+     *
+     * Defaults to `true`.
+     */
+    validateExp?: boolean
+    /**
+     * Whether to validate the `nbf` field.
+     *
+     * It will return an error if the current timestamp is before the time in the `nbf` field.
+     *
+     * Defaults to `false`.
+     */
+    validateNbf?: boolean
+    /**
+     * If it contains a value, the validation will check that the `sub` field is the same as the
+     * one provided and will error otherwise.
+     *
+     * Turned off by default.
+     */
+    sub?: string
+    /**
+     * The algorithm used to verify the signature.
+     *
+     * Defaults to `HS256`.
+     */
+    algorithms?: Array<Algorithm>
+    /**
+     * If it contains a value, the validation will check that the `iss` field is a member of the
+     * iss provided and will error otherwise.
+     * Use `set_issuer` to set it
+     *
+     * Defaults to an empty collection.
+     */
+    iss?: Array<string>
+    /**
+     * Whether to validate the JWT signature.
+     *
+     * Defaults to `true`.
+     */
+    validateSignature?: boolean
+}
+
+
+export function decodeHeader(token: string): Header
+export function sign(claims: Record<string, any>, key: string | buffer.Buffer, header?: Header | undefined | null): Promise<string>
+export function signSync(claims: Record<string, any>, key: string | buffer.Buffer, header?: Header | undefined | null): string
+export function verify(token: string, key: string | buffer.Buffer, validation?: Validation | undefined | null): Promise<Record<string,any>>
+export function verifySync(token: string, key: string | buffer.Buffer, validation?: Validation | undefined | null): Record<string,any>
+
+```
+
+## Usage
+
+```ts
+  const iat = getUtcTimestamp()
+const claims = {
+    data: {
+        id: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf6',
+        pr: 33,
+        isM: true,
+        set: ['KL', 'TV', 'JI'],
+        nest: { id: 'poly' },
+    },
+    exp: iat + oneDayInSeconds,
+    iat,
+}
+const secretKey = 'secret'
+const resSync = signSync(claims, secretKey)
+const resAsync = await sign(claims, secretKey)
+```

@@ -1,0 +1,94 @@
+<svg width="1120" height="720" viewBox="0 0 1120 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ohos-rs build pipeline</title>
+  <desc id="desc">Rust exports flow through ohos-rs macros and the cargo-installed ohrs tool into OpenHarmony shared libraries used by ArkTS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122225" />
+      <stop offset="0.5" stop-color="#0A1113" />
+      <stop offset="1" stop-color="#101A1D" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B2B2F" />
+      <stop offset="1" stop-color="#10181B" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#74F2D0" />
+      <stop offset="1" stop-color="#86AAFF" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#000000" flood-opacity="0.28" />
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2 2L12 7L2 12" stroke="#74F2D0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+
+  <rect width="1120" height="720" rx="34" fill="url(#bg)" />
+  <path d="M78 118H1042" stroke="#E2F4F0" stroke-opacity="0.06" />
+  <path d="M78 602H1042" stroke="#E2F4F0" stroke-opacity="0.06" />
+  <path d="M0 156C172 76 314 58 470 106C663 166 810 142 1120 42V0H0V156Z" fill="#74F2D0" fill-opacity="0.055" />
+  <path d="M78 84H1042V636H78V84Z" stroke="#E2F4F0" stroke-opacity="0.08" stroke-dasharray="10 14" />
+
+  <text x="84" y="80" font-family="Maple Mono, ui-monospace, monospace" font-size="18" fill="#74F2D0">ohos-rs pipeline</text>
+  <text x="84" y="112" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">Rust-first native modules for OpenHarmony</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="80" y="210" width="176" height="166" rx="18" fill="url(#card)" stroke="#E2F4F0" stroke-opacity="0.14" />
+    <rect x="102" y="232" width="78" height="28" rx="14" fill="#74F2D0" fill-opacity="0.14" stroke="#74F2D0" stroke-opacity="0.55" />
+    <text x="141" y="251" text-anchor="middle" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EF8DF">Rust</text>
+    <text x="102" y="296" font-family="Maple Mono, ui-monospace, monospace" font-size="22" font-weight="700" fill="#EEF8F5">Exports</text>
+    <text x="102" y="326" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">functions</text>
+    <text x="102" y="348" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">classes, tasks</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="314" y="210" width="176" height="166" rx="18" fill="url(#card)" stroke="#E2F4F0" stroke-opacity="0.14" />
+    <rect x="336" y="232" width="92" height="28" rx="14" fill="#74F2D0" fill-opacity="0.14" stroke="#74F2D0" stroke-opacity="0.55" />
+    <text x="382" y="251" text-anchor="middle" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EF8DF">#[napi]</text>
+    <text x="336" y="296" font-family="Maple Mono, ui-monospace, monospace" font-size="22" font-weight="700" fill="#EEF8F5">Boundary</text>
+    <text x="336" y="326" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">N-API bridge</text>
+    <text x="336" y="348" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">type mapping</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="548" y="210" width="176" height="166" rx="18" fill="url(#card)" stroke="#E2F4F0" stroke-opacity="0.14" />
+    <rect x="570" y="232" width="92" height="28" rx="14" fill="#74F2D0" fill-opacity="0.14" stroke="#74F2D0" stroke-opacity="0.55" />
+    <text x="616" y="251" text-anchor="middle" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EF8DF">ohrs</text>
+    <text x="570" y="296" font-family="Maple Mono, ui-monospace, monospace" font-size="22" font-weight="700" fill="#EEF8F5">Build</text>
+    <text x="570" y="326" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">cargo + NDK</text>
+    <text x="570" y="348" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">artifact layout</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="782" y="210" width="258" height="166" rx="18" fill="url(#card)" stroke="#E2F4F0" stroke-opacity="0.14" />
+    <rect x="804" y="232" width="132" height="28" rx="14" fill="#86AAFF" fill-opacity="0.14" stroke="#86AAFF" stroke-opacity="0.6" />
+    <text x="870" y="251" text-anchor="middle" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#B7C9FF">OpenHarmony</text>
+    <text x="804" y="296" font-family="Maple Mono, ui-monospace, monospace" font-size="22" font-weight="700" fill="#EEF8F5">lib*.so + ArkTS</text>
+    <text x="804" y="326" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">import native module</text>
+    <text x="804" y="348" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#9EB0AC">call Rust implementation</text>
+  </g>
+
+  <path d="M266 293H302" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+  <path d="M500 293H536" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+  <path d="M734 293H770" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <g opacity="0.9">
+    <rect x="154" y="460" width="196" height="82" rx="16" fill="#0F181B" stroke="#E2F4F0" stroke-opacity="0.12" />
+    <text x="180" y="494" font-family="Maple Mono, ui-monospace, monospace" font-size="16" font-weight="700" fill="#EEF8F5">Docs</text>
+    <text x="180" y="520" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EB0AC">runtime differences</text>
+
+    <rect x="462" y="460" width="196" height="82" rx="16" fill="#0F181B" stroke="#E2F4F0" stroke-opacity="0.12" />
+    <text x="488" y="494" font-family="Maple Mono, ui-monospace, monospace" font-size="16" font-weight="700" fill="#EEF8F5">Ecosystem</text>
+    <text x="488" y="520" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EB0AC">bindings and packages</text>
+
+    <rect x="770" y="460" width="196" height="82" rx="16" fill="#0F181B" stroke="#E2F4F0" stroke-opacity="0.12" />
+    <text x="796" y="494" font-family="Maple Mono, ui-monospace, monospace" font-size="16" font-weight="700" fill="#EEF8F5">CI/CD</text>
+    <text x="796" y="520" font-family="Maple Mono, ui-monospace, monospace" font-size="13" fill="#9EB0AC">repeatable builds</text>
+  </g>
+
+  <path d="M252 454C300 414 352 392 418 378" stroke="#86AAFF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 10" />
+  <path d="M560 454C582 424 606 400 636 382" stroke="#86AAFF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 10" />
+  <path d="M868 454C844 424 826 400 812 378" stroke="#86AAFF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 10" />
+
+  <text x="84" y="650" font-family="Maple Mono, ui-monospace, monospace" font-size="14" fill="#7F918D">Write Rust once, build OpenHarmony native artifacts, keep behavior documented and repeatable.</text>
+</svg>
