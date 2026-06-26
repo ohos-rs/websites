@@ -1,0 +1,3 @@
+```sh
+ohrs build --release
+```

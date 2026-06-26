@@ -1,0 +1,8 @@
+/docs/* /docs/index.html 200
+/ecosystem/* /ecosystem/index.html 200
+/blog/* /blog/index.html 200
+/en/docs/* /en/docs/index.html 200
+/en/ecosystem/* /en/ecosystem/index.html 200
+/en/blog/* /en/blog/index.html 200
+/en /en/index.html 200
+/en/* /en/index.html 200

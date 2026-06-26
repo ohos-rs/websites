@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with VitePress
-        run: npm run docs:build
+      - name: Build
+        run: npm run build
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -29,5 +29,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: c836b46f0b7ff4e3255625fb38bbe1f9
           projectName: ohos-rs-github-io
-          directory: .vitepress/dist
+          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
