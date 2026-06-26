@@ -129,6 +129,8 @@ const enDocs = [
     "Build commands, parameters, and output examples.",
   ],
   ["cli-artifact", "cli/artifact.md", "cli/artifact", "artifact", "Artifact handling command."],
+  ["cli-cargo", "cli/cargo.md", "cli/cargo", "cargo", "Cargo subcommand arguments."],
+  ["cli-doctor", "cli/doctor.md", "cli/doctor", "doctor", "Environment check command."],
   [
     "usage-basic",
     "usage/basic.md",
@@ -144,8 +146,22 @@ const enDocs = [
     "ThreadSafeFunction",
     "How to use ThreadSafeFunction.",
   ],
+  [
+    "ark-runtime",
+    "usage/ark_runtime.md",
+    "usage/ark_runtime",
+    "ArkRuntime",
+    "Access ArkRuntime in synchronous and asynchronous scenarios.",
+  ],
   ["ci-basic", "ci/basic.md", "ci/basic", "CI", "GitHub Actions and custom pipeline setup."],
   ["ci-zig", "ci/zig.md", "ci/zig", "zig-build", "Zig-related CI setup."],
+  [
+    "runtime-diff",
+    "more/diff.md",
+    "more/diff",
+    "Diff",
+    "Differences between ArkRuntime and Node.js-like runtimes.",
+  ],
   ["buffer", "more/buffer.md", "more/buffer", "Buffer", "Buffer and ArrayBuffer usage."],
   ["faq", "more/f&q.md", "more/f&q", "FAQ", "Size, Option<T>, library migration, and test issues."],
   ["known-issue", "more/known-issue.md", "more/known-issue", "N-API", "Known N-API issues."],
@@ -349,7 +365,15 @@ const enBlog = [
     "Release 1.0.0",
     "ohos-rs 1.0.0 release note.",
   ],
+  ["2024-07-30", "2024-07-30.md", "2024-07-30", "2024-07-30", "Beta release update."],
   ["2024-05-27", "2024-05-27.md", "2024-05-27", "2024-05-27", "Release note."],
+  [
+    "2025-01-24",
+    "2025-01-24.md",
+    "2025-01-24",
+    "OpenHarmony Ability and winit for OpenHarmony",
+    "Preview release for OpenHarmonyAbility and winit.",
+  ],
 ] as const satisfies readonly ContentItem[];
 
 const zhDocGroups = [
@@ -362,10 +386,10 @@ const zhDocGroups = [
 
 const enDocGroups = [
   ["Introduction", ["basic", "quick-start", "simple-project"]],
-  ["Scaffolding", ["cli-init", "cli-build", "cli-artifact"]],
-  ["Usage", ["usage-basic", "task", "thread-safe-function"]],
+  ["Scaffolding", ["cli-init", "cli-build", "cli-artifact", "cli-cargo", "cli-doctor"]],
+  ["Usage", ["usage-basic", "task", "thread-safe-function", "ark-runtime"]],
   ["CI/CD", ["ci-basic", "ci-zig"]],
-  ["More", ["buffer", "faq", "known-issue", "emu-tls"]],
+  ["More", ["runtime-diff", "buffer", "faq", "known-issue", "emu-tls"]],
 ] as const satisfies readonly GroupItem[];
 
 const zhEcosystemGroups = [
@@ -386,7 +410,7 @@ const zhBlogGroups = [
   ["Blog", ["release-1.0.0", "2024-07-30", "2024-05-27", "2025-01-24"]],
 ] as const satisfies readonly GroupItem[];
 const enBlogGroups = [
-  ["Blog", ["release-1.0.0", "2024-05-27"]],
+  ["Blog", ["release-1.0.0", "2024-07-30", "2024-05-27", "2025-01-24"]],
 ] as const satisfies readonly GroupItem[];
 
 export const contentLocales = {

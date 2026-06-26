@@ -60,11 +60,15 @@ const contentMarkdownFiles = [
   "src/en/docs/cli/init.md",
   "src/en/docs/cli/build.md",
   "src/en/docs/cli/artifact.md",
+  "src/en/docs/cli/cargo.md",
+  "src/en/docs/cli/doctor.md",
   "src/en/docs/usage/basic.md",
   "src/en/docs/usage/task.md",
   "src/en/docs/usage/tsfn.md",
+  "src/en/docs/usage/ark_runtime.md",
   "src/en/docs/ci/basic.md",
   "src/en/docs/ci/zig.md",
+  "src/en/docs/more/diff.md",
   "src/en/docs/more/buffer.md",
   "src/en/docs/more/f&q.md",
   "src/en/docs/more/known-issue.md",
@@ -89,7 +93,9 @@ const contentMarkdownFiles = [
   "src/en/ecosystem/third/boringssl.md",
   "src/en/blog/index.md",
   "src/en/blog/release-1.0.0.md",
+  "src/en/blog/2024-07-30.md",
   "src/en/blog/2024-05-27.md",
+  "src/en/blog/2025-01-24.md",
 ] as const;
 
 function docsFallback(): Plugin {
