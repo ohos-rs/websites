@@ -229,6 +229,13 @@ const zhEcosystem = [
     "AbortController",
     "AbortController polyfill。",
   ],
+  [
+    "web-streams",
+    "ecosystem/polyfill/web-streams.md",
+    "polyfill/web-streams",
+    "WebStreams",
+    "WebStreams polyfill 和 ohos-rs stream 互操作说明。",
+  ],
   ["openssl", "ecosystem/third/openssl.md", "third/openssl", "OpenSSL", "OpenSSL 适配说明。"],
   ["curl", "ecosystem/third/curl.md", "third/curl", "cURL", "cURL 与 SSL 使用示例。"],
   ["mmkv", "ecosystem/third/mmkv.md", "third/mmkv", "MMKV", "MMKV 包安装、API 和示例。"],
@@ -317,6 +324,13 @@ const enEcosystem = [
     "AbortController polyfill.",
   ],
   [
+    "web-streams",
+    "ecosystem/polyfill/web-streams.md",
+    "polyfill/web-streams",
+    "WebStreams",
+    "WebStreams polyfill and ohos-rs stream interop.",
+  ],
+  [
     "openssl",
     "ecosystem/third/openssl.md",
     "third/openssl",
@@ -395,14 +409,14 @@ const enDocGroups = [
 const zhEcosystemGroups = [
   ["@ohos-rs", ["crc32", "jieba", "argon2", "bcrypt", "jsonwebtoken", "snappy", "xxhash", "image"]],
   ["原生模块绑定", ["hilog-binding", "init-binding"]],
-  ["Polyfill", ["abort-controller"]],
+  ["Polyfill", ["abort-controller", "web-streams"]],
   ["第三方能力", ["openssl", "curl", "mmkv", "avif", "cronet", "boringssl"]],
 ] as const satisfies readonly GroupItem[];
 
 const enEcosystemGroups = [
   ["@ohos-rs", ["crc32", "jieba", "argon2", "bcrypt", "jsonwebtoken", "snappy", "xxhash", "image"]],
   ["Native bindings", ["hilog-binding", "init-binding"]],
-  ["Polyfill", ["abort-controller"]],
+  ["Polyfill", ["abort-controller", "web-streams"]],
   ["Third-party", ["openssl", "curl", "mmkv", "avif", "cronet", "boringssl"]],
 ] as const satisfies readonly GroupItem[];
 
