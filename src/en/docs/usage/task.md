@@ -29,7 +29,7 @@ pub trait Task: Send + Sized {
   }
 
   // after resolve or reject
-  fn finally(&mut self, _env: Env) -> Result<()> {
+  fn finally(self, _env: Env) -> Result<()> {
     Ok(())
   }
 }
@@ -77,14 +77,14 @@ Then, we need to implement the `Task` for `ComputeFib`.
 ```rust
 impl Task for ComputeFib {
     type Output = u32;
-    type JsValue = JsNumber;
+    type JsValue = u32;
 
     fn compute(&mut self) -> Result<Self::Output> {
         Ok(fibonacci_native(self.n))
     }
 
-    fn resolve(&mut self, env: Env, output: Self::Output) -> Result<Self::JsValue> {
-        env.create_uint32(output)
+    fn resolve(&mut self, _env: Env, output: Self::Output) -> Result<Self::JsValue> {
+        Ok(output)
     }
 }
 ```
@@ -95,11 +95,9 @@ Finally just to register a method for `ArkTS`, the function's sign should be bel
 
 ```rust [lib.rs]
 // register method
-#[napi(ts_return_type="Promise<number>")]
-pub fn fib(env: Env, init: u32) -> Result<JsObject> {
-    let task = ComputeFib::new(init);
-    let async_promise = env.spawn(task).unwrap();
-    Ok(async_promise.promise_object())
+#[napi]
+pub fn fib(init: u32) -> AsyncTask<ComputeFib> {
+    AsyncTask::new(ComputeFib::new(init))
 }
 ```
 
